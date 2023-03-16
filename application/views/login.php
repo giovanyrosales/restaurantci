@@ -33,11 +33,11 @@
 <body class="hold-transition login-page" style="background-color: yellow">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b>Restaurant Management System</b> CI</a>
+    <a href="#"><b>Sistema de Administración de Restaurante</b> CI</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Please login to start your session</p>
+    <p class="login-box-msg">Por Favor ingresa tus datos para Iniciar</p>
 
     <?php echo validation_errors(); ?>  
 
@@ -58,13 +58,13 @@
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              <input type="checkbox"> Remember Me
+              <input type="checkbox"> Recuerdame
             </label>
           </div>
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-success btn-block btn-flat">Log In</button>
+          <button type="submit" class="btn btn-success btn-block btn-flat">Entrar</button>
         </div>
         <!-- /.col -->
       </div>

@@ -5,12 +5,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Dashboard
-        <small>Control panel</small>
+        Panel
+        <small>Panel de Control</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li class="active">Panel</li>
       </ol>
     </section>
 
@@ -26,12 +26,12 @@
               <div class="inner">
                 <h3><?php echo $total_products ?></h3>
 
-                <p>Food Products</p>
+                <p>Alimentos</p>
               </div>
               <div class="icon">
                 <i class="ion ion-android-restaurant"></i>
               </div>
-              <a href="<?php echo base_url('products/') ?>" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url('products/') ?>" class="small-box-footer">Más Información  <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -41,12 +41,12 @@
               <div class="inner">
                 <h3><?php echo $total_paid_orders ?></h3>
 
-                <p>Total Paid Orders</p>
+                <p>Total Ordenes Pagadas</p>
               </div>
               <div class="icon">
                 <i class="ion ion-cash"></i>
               </div>
-              <a href="<?php echo base_url('orders/') ?>" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url('orders/') ?>" class="small-box-footer">Más Información  <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -56,12 +56,12 @@
               <div class="inner">
                 <h3><?php echo $total_users; ?></h3>
 
-                <p>System Users</p>
+                <p>Usuarios</p>
               </div>
               <div class="icon">
                 <i class="ion ion-android-people"></i>
               </div>
-              <a href="<?php echo base_url('users/') ?>" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url('users/') ?>" class="small-box-footer">Más Información  <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -71,12 +71,12 @@
               <div class="inner">
                 <h3><?php echo $total_stores ?></h3>
 
-                <p>Available Stores</p>
+                <p>Sucursales</p>
               </div>
               <div class="icon">
                 <i class="ion ion-android-home"></i>
               </div>
-              <a href="<?php echo base_url('stores/') ?>" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url('stores/') ?>" class="small-box-footer">Más Información  <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -90,12 +90,12 @@
               <div class="inner">
                 <h3><?php echo $total_category ?></h3>
 
-                <p>Food Category</p>
+                <p>Categoria de Alimentos</p>
               </div>
               <div class="icon">
                 <i class="ion ion-android-menu"></i>
               </div>
-              <a href="<?php echo base_url('category/') ?>" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url('category/') ?>" class="small-box-footer">Más Información <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -105,12 +105,12 @@
               <div class="inner">
                 <h3><?php echo $total_unpaid_orders ?></h3>
 
-                <p>UnPaid Orders</p>
+                <p>Ordenes sin Pagar</p>
               </div>
               <div class="icon">
                 <i class="ion ion-close-circled" style="color:rgb(177, 169, 169)"></i>
               </div>
-              <a href="<?php echo base_url('orders/') ?>" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url('orders/') ?>" class="small-box-footer">Más Información <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -120,12 +120,12 @@
               <div class="inner">
                 <h3><?php echo $total_orders ?></h3>
 
-                <p>Total Orders</p>
+                <p>Total Ordenes</p>
               </div>
               <div class="icon">
                 <i class="ion ion-clipboard"></i>
               </div>
-              <a href="<?php echo base_url('orders/') ?>" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url('orders/') ?>" class="small-box-footer">Más Información  <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -135,12 +135,12 @@
               <div class="inner">
                 <h3>$<?php $query = $this->db->query('SELECT SUM( net_amount)as total FROM orders WHERE paid_status = 1;')->row(); echo floatval($query->total);?></h3>
 
-                <p>Total Earnings</p>
+                <p>Total Ingresos</p>
               </div>
               <div class="icon">
                 <i class="ion ion-social-usd"></i>
               </div>
-              <a href="<?php echo base_url('reports/') ?>" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url('reports/') ?>" class="small-box-footer">Más Información <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -158,12 +158,12 @@
               <div class="inner">
                 <h3><?php echo $total_tables ?></h3>
 
-                <p>Available Tables</p>
+                <p>Mesas Disponibles</p>
               </div>
               <div class="icon">
                 <i class="ion ion-ios-grid-view"></i>
               </div>
-              <a href="<?php echo base_url('tables/') ?>" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url('tables/') ?>" class="small-box-footer">Más Información <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
 
@@ -183,7 +183,7 @@
               <div class="inner">
                 <h3><?php echo $total_products ?></h3>
 
-                <p>Food Products</p>
+                <p>Alimentos</p>
               </div>
               <div class="icon">
                 <i class="ion ion-android-restaurant"></i>
@@ -197,7 +197,7 @@
               <div class="inner">
                 <h3><?php echo $total_tables ?></h3>
 
-                <p>Available Tables</p>
+                <p>Mesas Disponibles</p>
               </div>
               <div class="icon">
                 <i class="ion ion-ios-grid-view"></i>
@@ -211,7 +211,7 @@
               <div class="inner">
                 <h3><?php echo $total_category ?></h3>
 
-                <p>Food Category</p>
+                <p>Categoria de Alimentos</p>
               </div>
               <div class="icon">
                 <i class="ion ion-android-menu"></i>
@@ -225,7 +225,7 @@
               <div class="inner">
                 <h3><?php echo $total_stores ?></h3>
 
-                <p>Available Stores</p>
+                <p>Sucursales</p>
               </div>
               <div class="icon">
                 <i class="ion ion-android-home"></i>
