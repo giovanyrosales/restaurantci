@@ -154,7 +154,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Borrar Categorio</h4>
+        <h4 class="modal-title">Borrar Categoria</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('category/remove') ?>" method="post" id="removeForm">
@@ -163,7 +163,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-          <button type="submit" class="btn btn-success">Guardar</button>
+          <button type="submit" class="btn btn-success">Borrar</button>
         </div>
       </form>
 

@@ -101,11 +101,11 @@
                   <div class="radio">
                     <label>
                       <input type="radio" name="gender" id="male" value="1">
-                      Male
+                      Masculino
                     </label>
                     <label>
                       <input type="radio" name="gender" id="female" value="2">
-                      Female
+                      Femenino
                     </label>
                   </div>
                 </div>

@@ -92,7 +92,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-          <button type="submit" class="btn btn-success">Guardar</button>
+          <button type="submit" class="btn btn-success">Borrar</button>
         </div>
       </form>
 
