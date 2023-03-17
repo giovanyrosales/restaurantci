@@ -2,15 +2,15 @@
     <!-- Logo -->
     <a href="" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>RMS</b></span>
+      <span class="logo-mini"><b>SAR</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Restaurant Management System</b></span>
+      <span class="logo-lg"><b>El Gavilán</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">Panel de Navegación</span>
       </a>
 
     </nav>

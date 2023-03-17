@@ -4,7 +4,7 @@
       <b>Version</b> 1.1.0
     </div>
     <strong>&copy;<?php echo date('Y'); ?> |</strong> All rights
-    reserved - Restaurant Management System CI
+    reserved - Administración de Restaurante El Gavilán
   </footer>
 
   <!-- Add the sidebar's background. This div must be placed

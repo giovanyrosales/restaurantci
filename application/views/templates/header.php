@@ -20,7 +20,7 @@
   <!-- Morris chart -->
   <link rel="stylesheet" href="<?php echo base_url('assets/bower_components/morris.js/morris.css') ?>">
   <!-- jvectormap -->
-  <link rel="stylesheet" href="<?php echo base_url('assets/bower_components/jvectormap/jquery-jvectormap.css') ?>">
+  <!-- <link rel="stylesheet" href="<?php echo base_url('assets/bower_components/jvectormap/jquery-jvectormap.css') ?>"> -->
   <!-- Date Picker -->
   <link rel="stylesheet" href="<?php echo base_url('assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') ?>">
   <!-- Daterange picker -->  
@@ -60,8 +60,8 @@
   <!-- Sparkline -->
   <script src="<?php echo base_url('assets/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js') ?>"></script>
   <!-- jvectormap -->
-  <script src="<?php echo base_url('assets/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js') ?>"></script>
-  <script src="<?php echo base_url('assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js') ?>"></script>
+  <!-- <script src="<?php echo base_url('assets/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js') ?>"></script> -->
+  <!-- <script src="<?php echo base_url('assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js') ?>"></script> -->
   <!-- jQuery Knob Chart -->
   <script src="<?php echo base_url('assets/bower_components/jquery-knob/dist/jquery.knob.min.js') ?>"></script>
   <!-- daterangepicker -->
@@ -92,7 +92,17 @@
 <script src="<?php echo base_url('assets/bower_components/datatables.net/js/jquery.dataTables.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') ?>"></script>
 
-
+<style>
+ .skin-yellow .main-header .navbar {
+    background-color: #7a3c3b;
+}
+.skin-yellow .main-header .logo {
+  background-color:transparent;
+}
+.skin-yellow .main-header .logo:hover {
+  background-color:transparent;
+}
+</style>
 
 </head>
 <body class="hold-transition skin-yellow sidebar-mini">

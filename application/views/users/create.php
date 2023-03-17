@@ -5,12 +5,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Manage
-        <small>Users</small>
+        Administración
+        <small>Usuarios</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Users</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li class="active">Usuarios</li>
       </ol>
     </section>
 
@@ -34,7 +34,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Add User</h3>
+              <h3 class="box-title">agregar Usuario</h3>
             </div>
             <form role="form" action="<?php base_url('users/create') ?>" method="post">
               <div class="box-body">
@@ -42,9 +42,9 @@
                 <?php echo validation_errors(); ?>
 
                 <div class="form-group">
-                  <label for="groups">Groups</label>
+                  <label for="groups">Grupos</label>
                   <select class="form-control" id="groups" name="groups">
-                    <option value="">Select Groups</option>
+                    <option value="">Seleccione Grupo</option>
                     <?php foreach ($group_data as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['group_name'] ?></option>
                     <?php endforeach ?>
@@ -52,9 +52,9 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="groups">Store</label>
+                  <label for="groups">Sucursal</label>
                   <select class="form-control" id="store" name="store">
-                    <option value="">Select store</option>
+                    <option value="">Seleccione Sucursal</option>
                     <?php foreach ($store_data as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
                     <?php endforeach ?>
@@ -62,42 +62,42 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="username">Username</label>
-                  <input type="text" class="form-control" id="username" name="username" placeholder="Username" autocomplete="off">
+                  <label for="username">Usuario</label>
+                  <input type="text" class="form-control" id="username" name="username" placeholder="Usuario" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" autocomplete="off">
+                  <label for="email">Correo</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Correo" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" name="password" placeholder="Password" autocomplete="off">
+                  <label for="password">Clave</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Clave" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="cpassword">Confirm password</label>
-                  <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirm Password" autocomplete="off">
+                  <label for="cpassword">Comfirmar clave</label>
+                  <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirmar Clave" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="fname">First name</label>
-                  <input type="text" class="form-control" id="fname" name="fname" placeholder="First name" autocomplete="off">
+                  <label for="fname">Nombres</label>
+                  <input type="text" class="form-control" id="fname" name="fname" placeholder="Primer Nombre" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="lname">Last name</label>
-                  <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name" autocomplete="off">
+                  <label for="lname">Apellidos</label>
+                  <input type="text" class="form-control" id="lname" name="lname" placeholder="Apellidos" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" autocomplete="off">
+                  <label for="phone">Teléfono</label>
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefono" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="gender">Gender</label>
+                  <label for="gender">Genero</label>
                   <div class="radio">
                     <label>
                       <input type="radio" name="gender" id="male" value="1">
@@ -114,8 +114,8 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-success">Save Changes</button>
-                <a href="<?php echo base_url('users/') ?>" class="btn btn-danger">Back</a>
+                <button type="submit" class="btn btn-success">Guardar</button>
+                <a href="<?php echo base_url('users/') ?>" class="btn btn-danger">Regresar</a>
               </div>
             </form>
           </div>

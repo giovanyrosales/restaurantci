@@ -30,10 +30,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
 </head>
-<body class="hold-transition login-page" style="background-color: yellow">
+<body class="hold-transition login-page" style="background-color: #7a3c3b">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b>Sistema de Administración El Gavilán</b> CI</a>
+    <a href="#"><b>Sistema de Administración El Gavilán</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">

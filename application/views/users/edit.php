@@ -5,12 +5,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Manage
-        <small>Users</small>
+        Administración
+        <small>Usuarios</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Users</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li class="active">Usuarios</li>
       </ol>
     </section>
 
@@ -34,7 +34,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Edit User</h3>
+              <h3 class="box-title">Editar Usuario</h3>
             </div>
             <form role="form" action="<?php base_url('users/create') ?>" method="post">
               <div class="box-body">
@@ -44,7 +44,7 @@
                 <div class="form-group">
                   <label for="groups">Groups</label>
                   <select class="form-control" id="groups" name="groups">
-                    <option value="">Select Groups</option>
+                    <option value="">Seleccione grupo</option>
                     <?php foreach ($group_data as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>" <?php if($user_group['id'] == $v['id']) { echo 'selected'; } ?> ><?php echo $v['group_name'] ?></option> 
                     <?php endforeach ?>
@@ -52,9 +52,9 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="groups">Store</label>
+                  <label for="groups">Sucursal</label>
                   <select class="form-control" id="store" name="store">
-                    <option value="">Select store</option>
+                    <option value="">Seleccione Sucursal</option>
                     <?php foreach ($store_data as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>" <?php if($user_data['store_id'] == $v['id']) { echo "selected='selected'"; } ?>><?php echo $v['name'] ?></option>
                     <?php endforeach ?>
@@ -62,32 +62,32 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="username">Username</label>
-                  <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?php echo $user_data['username'] ?>" autocomplete="off">
+                  <label for="username">Usuario</label>
+                  <input type="text" class="form-control" id="username" name="username" placeholder="Usuario" value="<?php echo $user_data['username'] ?>" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo $user_data['email'] ?>" autocomplete="off">
+                  <label for="email">Correo</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Correo" value="<?php echo $user_data['email'] ?>" autocomplete="off">
                 </div>                
 
                 <div class="form-group">
-                  <label for="fname">First name</label>
-                  <input type="text" class="form-control" id="fname" name="fname" placeholder="First name" value="<?php echo $user_data['firstname'] ?>" autocomplete="off">
+                  <label for="fname">Nombres</label>
+                  <input type="text" class="form-control" id="fname" name="fname" placeholder="Nombre" value="<?php echo $user_data['firstname'] ?>" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="lname">Last name</label>
-                  <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name" value="<?php echo $user_data['lastname'] ?>" autocomplete="off">
+                  <label for="lname">Apellidos</label>
+                  <input type="text" class="form-control" id="lname" name="lname" placeholder="Apellido" value="<?php echo $user_data['lastname'] ?>" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" value="<?php echo $user_data['phone'] ?>" autocomplete="off">
+                  <label for="phone">Teléfono</label>
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefono" value="<?php echo $user_data['phone'] ?>" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="gender">Gender</label>
+                  <label for="gender">Genero</label>
                   <div class="radio">
                     <label>
                       <input type="radio" name="gender" id="male" value="1" <?php if($user_data['gender'] == 1) {
@@ -107,26 +107,26 @@
                 <div class="form-group">
                   <div class="alert alert-info alert-dismissible" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      Leave the password field empty if you don't want to change.
+                      Deje el campo de clave vacio si no quiere actualizar la clave.
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" name="password" placeholder="Password" autocomplete="off">
+                  <label for="password">Nueva Clave</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Clave" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="cpassword">Confirm password</label>
-                  <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirm Password" autocomplete="off">
+                  <label for="cpassword">Confirmar Clave</label>
+                  <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirmar Clave" autocomplete="off">
                 </div>
 
               </div>
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-success">Save Changes</button>
-                <a href="<?php echo base_url('users/') ?>" class="btn btn-danger">Back</a>
+                <button type="submit" class="btn btn-success">Guardar</button>
+                <a href="<?php echo base_url('users/') ?>" class="btn btn-danger">Regresar</a>
               </div>
             </form>
           </div>
