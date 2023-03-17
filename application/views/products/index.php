@@ -5,12 +5,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage
-      <small>Products</small>
+      Administración
+      <small>Productos</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Products</li>
+      <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+      <li class="active">Productos</li>
     </ol>
   </section>
 
@@ -35,30 +35,30 @@
         <?php endif; ?>
 
         <?php if(in_array('createProduct', $user_permission)): ?>
-          <a href="<?php echo base_url('products/create') ?>" class="btn btn-success">Add Product</a>
+          <a href="<?php echo base_url('products/create') ?>" class="btn btn-success">Agregar Producto</a>
           
         <?php endif; ?>
 
-        <a href="<?php echo base_url('products/viewproduct') ?>" class="btn btn-warning">View Product</a>
+        <a href="<?php echo base_url('products/viewproduct') ?>" class="btn btn-warning">Ver Producto</a>
         
         <br /> <br />
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Manage Products</h3>
+            <h3 class="box-title">Administrar Productos</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-hover table-striped">
               <thead>
               <tr>
-                <th>Image</th>
-                <th>Product Name</th>
-                <th>Price</th>
-                <th>Store</th>
-                <th>Status</th>
+                <th>Imagen</th>
+                <th>Nombre Producto</th>
+                <th>Precio</th>
+                <th>Sucursal</th>
+                <th>Estado</th>
                 <?php if(in_array('updateProduct', $user_permission) || in_array('deleteProduct', $user_permission)): ?>
-                  <th>Action</th>
+                  <th>Opciones</th>
                 <?php endif; ?>
               </tr>
               </thead>
@@ -86,16 +86,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Remove Product</h4>
+        <h4 class="modal-title">Borrar Producto</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('products/remove') ?>" method="post" id="removeForm">
         <div class="modal-body">
-          <p>Do you really want to remove?</p>
+          <p>Seguro quiere borrar?</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-success">Save changes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-success">Guardar</button>
         </div>
       </form>
 

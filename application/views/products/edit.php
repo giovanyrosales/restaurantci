@@ -5,12 +5,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage
-      <small>Products</small>
+      Administración
+      <small>Productos</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Products</li>
+      <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+      <li class="active">Productos</li>
     </ol>
   </section>
 
@@ -37,7 +37,7 @@
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Add Product</h3>
+            <h3 class="box-title">Agregar Producto</h3>
           </div>
           <!-- /.box-header -->
           <form role="form" action="" method="post" enctype="multipart/form-data">
@@ -46,13 +46,13 @@
                 <?php echo validation_errors(); ?>
 
                 <div class="form-group">
-                  <label>Image Preview: </label>
+                  <label>Vista Previa: </label>
                   <img src="<?php echo base_url() . $product_data['image'] ?>" width="150" height="150" class="img-circle">
                 </div>
 
                 <div class="form-group">
 
-                  <label for="product_image">Image</label>
+                  <label for="product_image">Imagen</label>
                   <div class="kv-avatar">
                       <div class="file-loading">
                           <input id="product_image" name="product_image" type="file">
@@ -61,25 +61,24 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="product_name">Product name</label>
-                  <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Enter product name" autocomplete="off" value="<?php echo !empty($this->input->post('product_name')) ?:$product_data['name'] ?>" />
+                  <label for="product_name">Nombre de Producto</label>
+                  <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Ingrese nombre de Producto" autocomplete="off" value="<?php echo !empty($this->input->post('product_name')) ?:$product_data['name'] ?>" />
                 </div>
 
                 <div class="form-group">
-                  <label for="price">Price</label>
-                  <input type="text" class="form-control" id="price" name="price" placeholder="Enter price" autocomplete="off" value="<?php echo !empty($this->input->post('price')) ?:$product_data['price'] ?>"/>
+                  <label for="price">Precio</label>
+                  <input type="text" class="form-control" id="price" name="price" placeholder="EIngrese Precio" autocomplete="off" value="<?php echo !empty($this->input->post('price')) ?:$product_data['price'] ?>"/>
                 </div>
 
                 <div class="form-group">
-                  <label for="description">Description</label>
-                  <textarea type="text" class="form-control" id="description" name="description" placeholder="Enter 
-                  description" autocomplete="off">
+                  <label for="description">Descripción</label>
+                  <textarea type="text" class="form-control" id="description" name="description" placeholder="Ingrese Descripción" autocomplete="off">
                   <?php echo !empty($this->input->post('description')) ?:$product_data['description'] ?>
                   </textarea>
                 </div>
 
                 <div class="form-group">
-                  <label for="category">Category</label>
+                  <label for="category">Categoria</label>
                   <?php $category_data = json_decode($product_data['category_id']); ?>
                   <select class="form-control select_group" id="category" name="category[]" multiple="multiple">
                     <?php foreach ($category as $k => $v): ?>
@@ -89,7 +88,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="store">Store</label>
+                  <label for="store">Sucursal</label>
                   <?php $store_data = json_decode($product_data['store_id']); ?>
                   <select class="form-control select_group" id="store" name="store[]" multiple="multiple">
                     <?php foreach ($stores as $k => $v): ?>
@@ -99,9 +98,9 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="store">Active</label>
+                  <label for="store">Acivo</label>
                   <select class="form-control" id="active" name="active"> 
-                    <option value="1" <?php if($product_data['active'] == 1) { echo 'selected="selected"'; } ?>>Yes</option>
+                    <option value="1" <?php if($product_data['active'] == 1) { echo 'selected="selected"'; } ?>>Si</option>
                     <option value="2" <?php if($product_data['active'] == 2) { echo 'selected="selected"'; } ?>>No</option>
                   </select>
                 </div>
@@ -110,8 +109,8 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-success">Save Changes</button>
-                <a href="<?php echo base_url('products/') ?>" class="btn btn-danger">Back</a>
+                <button type="submit" class="btn btn-success">Guardar</button>
+                <a href="<?php echo base_url('products/') ?>" class="btn btn-danger">Regresar</a>
               </div>
             </form>
           <!-- /.box-body -->

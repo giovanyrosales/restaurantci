@@ -5,13 +5,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Manage
-        <small>Groups</small>
+        Administración
+        <small>Grupos</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="<?php echo base_url('groups/') ?>">Groups</a></li>
-        <li class="active">Edit</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li><a href="<?php echo base_url('groups/') ?>">Grupos</a></li>
+        <li class="active">Editar</li>
       </ol>
     </section>
 
@@ -35,7 +35,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Edit Group</h3>
+              <h3 class="box-title">Editar grupo</h3>
             </div>
             <form role="form" action="<?php base_url('groups/update') ?>" method="post">
               <div class="box-body">
@@ -43,11 +43,11 @@
                 <?php echo validation_errors(); ?>
 
                 <div class="form-group">
-                  <label for="group_name">Group Name</label>
-                  <input type="text" class="form-control" id="group_name" name="group_name" placeholder="Enter group name" value="<?php echo $group_data['group_name']; ?>" autocomplete="off">
+                  <label for="group_name">Nombre de Grupo</label>
+                  <input type="text" class="form-control" id="group_name" name="group_name" placeholder="Ingrese nombre de grupo" value="<?php echo $group_data['group_name']; ?>" autocomplete="off">
                 </div>
                 <div class="form-group">
-                  <label for="permission">Permission</label>
+                  <label for="permission">Permisos</label>
 
                   <?php $serialize_permission = unserialize($group_data['permission']); ?>
                   
@@ -55,10 +55,10 @@
                     <thead>
                       <tr>
                         <th></th>
-                        <th>Create</th>
-                        <th>Update</th>
-                        <th>View</th>
-                        <th>Delete</th>
+                        <th>Crear</th>
+                        <th>Actualizar</th>
+                        <th>Ver</th>
+                        <th>Borrar</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -84,7 +84,7 @@
                          ?>></td>
                       </tr>
                       <tr>
-                        <td>Groups</td>
+                        <td>Grupos</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createGroup" <?php 
                         if($serialize_permission) {
                           if(in_array('createGroup', $serialize_permission)) { echo "checked"; }  
@@ -107,7 +107,7 @@
                          ?>></td>
                       </tr>
                       <tr>
-                        <td>Stores</td>
+                        <td>Sucursales</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createStore" <?php 
                         if($serialize_permission) {
                           if(in_array('createStore', $serialize_permission)) { echo "checked"; }  
@@ -130,7 +130,7 @@
                          ?>></td>
                       </tr>
                       <tr>
-                        <td>Tables</td>
+                        <td>Mesas</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createTable" <?php 
                         if($serialize_permission) {
                           if(in_array('createTable', $serialize_permission)) { echo "checked"; }  
@@ -153,7 +153,7 @@
                          ?>></td>
                       </tr>
                       <tr>
-                        <td>Category</td>
+                        <td>Categorias</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createCategory" <?php 
                         if($serialize_permission) {
                           if(in_array('createCategory', $serialize_permission)) { echo "checked"; }  
@@ -176,7 +176,7 @@
                          ?>></td>
                       </tr>
                       <tr>
-                        <td>Product</td>
+                        <td>Productos</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createProduct" <?php 
                         if($serialize_permission) {
                           if(in_array('createProduct', $serialize_permission)) { echo "checked"; }  
@@ -199,7 +199,7 @@
                          ?>></td>
                       </tr>
                       <tr>
-                        <td>Orders</td>
+                        <td>Ordenes</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createOrder" <?php 
                         if($serialize_permission) {
                           if(in_array('createOrder', $serialize_permission)) { echo "checked"; }  
@@ -222,7 +222,7 @@
                          ?>></td>
                       </tr>
                       <tr>
-                        <td>Report</td>
+                        <td>Reportes</td>
                         <td> - </td>
                         <td> - </td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewReport" <?php 
@@ -233,7 +233,7 @@
                         <td> - </td>
                       </tr>
                       <tr>
-                        <td>Company</td>
+                        <td>Empresa</td>
                         <td> - </td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateCompany" <?php 
                         if($serialize_permission) {
@@ -244,7 +244,7 @@
                         <td> - </td>
                       </tr>
                       <tr>
-                        <td>Profile</td>
+                        <td>Perfil</td>
                         <td> - </td>
                         <td> - </td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewProfile" <?php 
@@ -255,7 +255,7 @@
                         <td> - </td>
                       </tr>
                       <tr>
-                        <td>Setting</td>
+                        <td>Configuraciones</td>
                         <td> - </td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateSetting" <?php 
                         if($serialize_permission) {
@@ -273,8 +273,8 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-success">Update Changes</button>
-                <a href="<?php echo base_url('groups/') ?>" class="btn btn-danger">Back</a>
+                <button type="submit" class="btn btn-success">Actualizar</button>
+                <a href="<?php echo base_url('groups/') ?>" class="btn btn-danger">Regresar</a>
               </div>
             </form>
           </div>

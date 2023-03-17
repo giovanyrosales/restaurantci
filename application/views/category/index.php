@@ -5,12 +5,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Manage
-        <small>Category</small>
+        Administración
+        <small>Categoria</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Category</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li class="active">Categoria</li>
       </ol>
     </section>
 
@@ -23,7 +23,7 @@
           <div id="messages"></div>
           
           <?php if(in_array('createCategory', $user_permission)): ?>
-            <button class="btn btn-success" data-toggle="modal" data-target="#addModal">Add Category</button>
+            <button class="btn btn-success" data-toggle="modal" data-target="#addModal">Agregar Categoria</button>
             <br /> <br />
             
           <?php endif; ?>
@@ -31,17 +31,17 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Manage Category</h3>
+              <h3 class="box-title">Admin. Categorias</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="manageTable" class="table table-bordered table-hover table-striped">
                 <thead>
                 <tr>
-                  <th>Category name</th>
-                  <th>Status</th>
+                  <th>Nombre Categoria</th>
+                  <th>Estado</th>
                   <?php if(in_array('updateCategory', $user_permission) || in_array('deleteCategory', $user_permission)): ?>
-                  <th>Action</th>
+                  <th>Opciones</th>
                   <?php endif; ?>
                 </tr>
                 </thead>
@@ -71,7 +71,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Add Category</h4>
+        <h4 class="modal-title">Agregar Categoria</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('category/create') ?>" method="post" id="createForm">
@@ -79,22 +79,22 @@
         <div class="modal-body">
 
           <div class="form-group">
-            <label for="brand_name">Category Name</label>
+            <label for="brand_name">Nombre Categoria</label>
             <input type="text" class="form-control" id="category_name" name="category_name" placeholder="Enter category name" autocomplete="off">
           </div>
 
           <div class="form-group">
-            <label for="active">Status</label>
+            <label for="active">Estado</label>
             <select class="form-control" id="active" name="active">
-              <option value="1">Active</option>
-              <option value="2">Inactive</option>
+              <option value="1">Activo</option>
+              <option value="2">Inactivo</option>
             </select>
           </div>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-success">Save changes</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-success">Guardar</button>
         </div>
 
       </form>
@@ -112,7 +112,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Edit Category</h4>
+        <h4 class="modal-title">Editar Categoria</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('category/update') ?>" method="post" id="updateForm">
@@ -121,22 +121,22 @@
           <div id="messages"></div>
 
           <div class="form-group">
-            <label for="brand_name">Category Name</label>
+            <label for="brand_name">Nombre Categoria</label>
             <input type="text" class="form-control" id="edit_category_name" name="edit_category_name" placeholder="Enter category name" autocomplete="off">
           </div>
 
           <div class="form-group">
-            <label for="active">Status</label>
+            <label for="active">Estado</label>
             <select class="form-control" id="edit_active" name="edit_active">
-              <option value="1">Active</option>
-              <option value="2">Inactive</option>
+              <option value="1">Activo</option>
+              <option value="2">Inactivo</option>
             </select>
           </div>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-success">Save changes</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-success">Guardar</button>
         </div>
 
       </form>
@@ -154,16 +154,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Remove Category</h4>
+        <h4 class="modal-title">Borrar Categorio</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('category/remove') ?>" method="post" id="removeForm">
         <div class="modal-body">
-          <p>Do you really want to remove?</p>
+          <p>Seguro quiere eliminar?</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-success">Save changes</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-success">Guardar</button>
         </div>
       </form>
 

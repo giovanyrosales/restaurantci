@@ -5,12 +5,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Manage
-        <small>Groups</small>
+        Administración
+        <small>Grupos</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">groups</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li class="active">Grupos</li>
       </ol>
     </section>
 
@@ -34,7 +34,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Add Group</h3>
+              <h3 class="box-title">Agregar Grupo</h3>
             </div>
             <form role="form" action="<?php base_url('groups/create') ?>" method="post">
               <div class="box-body">
@@ -42,95 +42,95 @@
                 <?php echo validation_errors(); ?>
 
                 <div class="form-group">
-                  <label for="group_name">Group Name</label>
-                  <input type="text" class="form-control" id="group_name" name="group_name" placeholder="Enter group name" autocomplete="off">
+                  <label for="group_name">Nombre de grupo</label>
+                  <input type="text" class="form-control" id="group_name" name="group_name" placeholder="Ingrese el nombre del grupo" autocomplete="off">
                 </div>
                 <div class="form-group">
-                  <label for="permission">Permission</label>
+                  <label for="permission">Permisos</label>
 
                   <table class="table table-responsive table-hover">
                     <thead>
                       <tr>
                         <th></th>
-                        <th>Create</th>
-                        <th>Update</th>
-                        <th>View</th>
-                        <th>Delete</th>
+                        <th>Crear</th>
+                        <th>Actualizar</th>
+                        <th>Ver</th>
+                        <th>Borrar</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Users</td>
+                        <td>Usuarios</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createUser"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateUser"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewUser"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="deleteUser"></td>
                       </tr>
                       <tr>
-                        <td>Groups</td>
+                        <td>Grupos</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createGroup"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateGroup"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewGroup"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="deleteGroup"></td>
                       </tr>
                       <tr>
-                        <td>Stores</td>
+                        <td>Sucursales</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createStore"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateStore"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewStore"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="deleteStore"></td>
                       </tr>
                       <tr>
-                        <td>Tables</td>
+                        <td>Mesas</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createTable"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateTable"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewTable"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="deleteTable"></td>
                       </tr>
                       <tr>
-                        <td>Category</td>
+                        <td>Categorias</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createCategory"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateCategory"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewCategory"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="deleteCategory"></td>
                       </tr>
                       <tr>
-                        <td>Product</td>
+                        <td>Productos</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createProduct"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateProduct"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewProduct"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="deleteProduct"></td>
                       </tr>
                       <tr>
-                        <td>Orders</td>
+                        <td>Ordenes</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createOrder"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateOrder"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewOrder"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="deleteOrder"></td>
                       </tr>
                       <tr>
-                        <td>Report</td>
+                        <td>Reportes</td>
                         <td> - </td>
                         <td> - </td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewReport"></td>
                         <td> - </td>
                       </tr>
                       <tr>
-                        <td>Company</td>
+                        <td>Empresa</td>
                         <td> - </td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateCompany"></td>
                         <td> - </td>
                         <td> - </td>
                       </tr>
                       <tr>
-                        <td>Profile</td>
+                        <td>Perfil</td>
                         <td> - </td>
                         <td> - </td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewProfile"></td>
                         <td> - </td>
                       </tr>
                       <tr>
-                        <td>Setting</td>
+                        <td>Configuraciones</td>
                         <td> - </td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateSetting"></td>
                         <td> - </td>
@@ -144,8 +144,9 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-success">Save Changes</button>
-                <a href="<?php echo base_url('groups/') ?>" class="btn btn-danger">Back</a>
+                <button type="submit" class="btn btn-success">Guardar
+                </button>
+                <a href="<?php echo base_url('groups/') ?>" class="btn btn-danger">Regresar</a>
               </div>
             </form>
           </div>

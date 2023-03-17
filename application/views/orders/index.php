@@ -5,12 +5,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage
-      <small>Orders</small>
+      Administración
+      <small>Ordenes</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Orders</li>
+      <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+      <li class="active">Ordenes</li>
     </ol>
   </section>
 
@@ -35,27 +35,27 @@
         <?php endif; ?>
 
         <?php if(in_array('createOrder', $user_permission)): ?>
-          <a href="<?php echo base_url('orders/create') ?>" class="btn btn-success">Add Order</a>
+          <a href="<?php echo base_url('orders/create') ?>" class="btn btn-success">Agregar Orden</a>
           <br /> <br />
         <?php endif; ?>
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Manage Orders</h3>
+            <h3 class="box-title">Administrar Ordenes</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-hover table-striped">
               <thead>
               <tr>
-                <th>Bill no</th>
-                <th>Store</th>
-                <th>Date Time</th>
-                <th>Total Products</th>
-                <th>Total Amount</th>
-                <th>Paid status</th>
+                <th>Ticket No.</th>
+                <th>Empresa</th>
+                <th>Fecha</th>
+                <th>Productos</th>
+                <th>Total</th>
+                <th>Estado de Pago</th>
                 <?php if(in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
-                  <th>Action</th>
+                  <th>Opciones</th>
                 <?php endif; ?>
               </tr>
               </thead>
@@ -83,16 +83,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Remove Order</h4>
+        <h4 class="modal-title">Borrar Orden</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('orders/remove') ?>" method="post" id="removeForm">
         <div class="modal-body">
-          <p>Do you really want to remove?</p>
+          <p>Seguro quiere borrar?</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-success">Save changes</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-success">Guardar</button>
         </div>
       </form>
 

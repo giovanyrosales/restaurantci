@@ -5,11 +5,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Reports
+        Reportes
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Reports</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li class="active">Reportes</li>
       </ol>
     </section>
 
@@ -21,14 +21,14 @@
         <div class="col-md-12 col-xs-12">
           <form class="form-inline" action="<?php echo base_url('reports/') ?>" method="POST">
             <div class="form-group">
-              <label for="date">Year</label>
+              <label for="date">Año</label>
               <select class="form-control" name="select_year" id="select_year">
                 <?php foreach ($report_years as $key => $value): ?>
                   <option value="<?php echo $value ?>" <?php if($value == $selected_year) { echo "selected"; } ?>><?php echo $value; ?></option>
                 <?php endforeach ?>
               </select>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default">Enviar</button>
           </form>
         </div>
 
@@ -51,7 +51,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Total Paid Orders - Report</h3>
+              <h3 class="box-title">Total Ordenes Pagadas - Reporte</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -64,15 +64,15 @@
           <!-- /.box -->
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Total Paid Orders - Report Data</h3>
+              <h3 class="box-title">Total Ordenes Pagadas - Reporte Data</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="datatables" class="table table-bordered table-hover table-striped">
                 <thead>
                 <tr>
-                  <th>Month - Year</th>
-                  <th>Amount</th>
+                  <th>Mes - Año</th>
+                  <th>Total</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -92,7 +92,7 @@
                 </tbody>
                 <tbody>
                   <tr>
-                    <th>Total Amount</th>
+                    <th>Total</th>
                     <th>
                       <?php echo $company_currency . ' ' . array_sum($results); ?>
                       <?php //echo array_sum($results); ?>
@@ -131,7 +131,7 @@
      * Here we will create a few charts using ChartJS
      */
      var areaChartData = {
-      labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      labels  : ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
       datasets: [
         {
           label               : 'Electronics',

@@ -5,12 +5,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage
-      <small>Products</small>
+      Administración
+      <small>Productos</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Products</li>
+      <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+      <li class="active">Productos</li>
     </ol>
   </section>
 
@@ -37,7 +37,7 @@
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Add Product</h3>
+            <h3 class="box-title">Agregar Producto</h3>
           </div>
           <!-- /.box-header -->
           <form role="form" action="" method="post" enctype="multipart/form-data">
@@ -47,7 +47,7 @@
 
                 <div class="form-group">
 
-                  <label for="product_image">Image</label>
+                  <label for="product_image">Imagen</label>
                   <div class="kv-avatar">
                       <div class="file-loading">
                           <input id="product_image" name="product_image" type="file">
@@ -56,25 +56,24 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="product_name">Product name</label>
-                  <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Enter product name" autocomplete="off" value="<?php echo $this->input->post('product_name') ?>" />
+                  <label for="product_name">Nombre Producto</label>
+                  <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Nombre de Producto" autocomplete="off" value="<?php echo $this->input->post('product_name') ?>" />
                 </div>
 
                 <div class="form-group">
-                  <label for="price">Price</label>
-                  <input type="text" class="form-control" id="price" name="price" placeholder="Enter price" autocomplete="off" value="<?php echo $this->input->post('price') ?>"/>
+                  <label for="price">Precio</label>
+                  <input type="text" class="form-control" id="price" name="price" placeholder="Ingrese Precio" autocomplete="off" value="<?php echo $this->input->post('price') ?>"/>
                 </div>
 
                 <div class="form-group">
-                  <label for="description">Description</label>
-                  <textarea type="text" class="form-control" id="description" name="description" placeholder="Enter 
-                  description" autocomplete="off">
+                  <label for="description">Descripción</label>
+                  <textarea type="text" class="form-control" id="description" name="description" placeholder="Ingrese Descripción" autocomplete="off">
                   <?php echo $this->input->post('description') ?>
                   </textarea>
                 </div>
 
                 <div class="form-group">
-                  <label for="category">Category</label>
+                  <label for="category">Categoria</label>
                   <select class="form-control select_group" id="category" name="category[]" multiple="multiple">
                     <?php foreach ($category as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
@@ -83,7 +82,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="store">Store</label>
+                  <label for="store">Empresa</label>
                   <select class="form-control select_group" id="store" name="store[]" multiple="multiple">
                     <?php foreach ($stores as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
@@ -92,9 +91,9 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="store">Active</label>
+                  <label for="store">Activo</label>
                   <select class="form-control" id="active" name="active">
-                    <option value="1">Yes</option>
+                    <option value="1">Si</option>
                     <option value="2">No</option>
                   </select>
                 </div>
@@ -103,8 +102,8 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-success">Save Changes</button>
-                <a href="<?php echo base_url('products/') ?>" class="btn btn-danger">Back</a>
+                <button type="submit" class="btn btn-success">Guardar</button>
+                <a href="<?php echo base_url('products/') ?>" class="btn btn-danger">Regresar</a>
               </div>
             </form>
           <!-- /.box-body -->
