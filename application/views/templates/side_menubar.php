@@ -61,7 +61,7 @@
           <li id="storesMainNav"><a href="<?php echo base_url('stores/') ?>"><i class="fa fa-simplybuilt"></i> <span>Sucursales</span></a></li>
         <?php endif; ?>
         <?php if(in_array('createUser', $user_permission) || in_array('updateUser', $user_permission) || in_array('viewUser', $user_permission) || in_array('deleteUser', $user_permission)): ?>
-          <li id="gastosMainNav"><a href="<?php echo base_url('gastos/') ?>"><i class="fa fa-simplybuilt"></i> <span>Gastos</span></a></li>
+          <li id="gastosMainNav"><a href="<?php echo base_url('gastos/') ?>"><i class="fa fa-inbox"></i> <span>Gastos</span></a></li>
         <?php endif; ?>
 
         <?php if(in_array('createTable', $user_permission) || in_array('updateTable', $user_permission) || in_array('viewTable', $user_permission) || in_array('deleteTable', $user_permission)): ?>

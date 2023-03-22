@@ -47,7 +47,7 @@
 
     <form action="<?php echo base_url('auth/login') ?>" method="post">
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" name="email" id="email" placeholder="Correo" autocomplete="off">
+        <input type="text" class="form-control" name="username" id="username" placeholder="Usuario" autocomplete="on">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
