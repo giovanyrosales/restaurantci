@@ -76,10 +76,10 @@ class Orders extends Admin_Controller
 			}
 
 			if($value['paid_status'] == 1) {
-				$paid_status = '<span class="label label-success">Paid</span>';	
+				$paid_status = '<span class="label label-success">Pagada</span>';	
 			}
 			else {
-				$paid_status = '<span class="label label-danger">Not Paid</span>';
+				$paid_status = '<span class="label label-danger">Sin Pagar</span>';
 			}
 
 			$result['data'][$key] = array(
@@ -109,7 +109,7 @@ class Orders extends Admin_Controller
 
 		$this->data['page_title'] = 'Add Order';
 
-		$this->form_validation->set_rules('product[]', 'Product name', 'trim|required');
+		$this->form_validation->set_rules('product[]', 'Nombre del Producto', 'trim|required');
 		
 	
         if ($this->form_validation->run() == TRUE) {        	
@@ -117,11 +117,11 @@ class Orders extends Admin_Controller
         	$order_id = $this->model_orders->create();
         	
         	if($order_id) {
-        		$this->session->set_flashdata('success', 'Successfully created');
+        		$this->session->set_flashdata('success', 'Orden Creada');
         		redirect('orders/update/'.$order_id, 'refresh');
         	}
         	else {
-        		$this->session->set_flashdata('errors', 'Error occurred!!');
+        		$this->session->set_flashdata('errors', 'Error Ocurrio!!');
         		redirect('orders/create/', 'refresh');
         	}
         }
@@ -181,9 +181,9 @@ class Orders extends Admin_Controller
 
 
 
-		$this->data['page_title'] = 'Update Order';
+		$this->data['page_title'] = 'Actualizar Orden';
 
-		$this->form_validation->set_rules('product[]', 'Product name', 'trim|required');
+		$this->form_validation->set_rules('product[]', 'Producto', 'trim|required');
 		
 	
         if ($this->form_validation->run() == TRUE) {        	
@@ -191,11 +191,11 @@ class Orders extends Admin_Controller
         	$update = $this->model_orders->update($id);
         	
         	if($update == true) {
-        		$this->session->set_flashdata('success', 'Successfully updated');
+        		$this->session->set_flashdata('success', 'Actualizada');
         		redirect('orders/update/'.$id, 'refresh');
         	}
         	else {
-        		$this->session->set_flashdata('errors', 'Error occurred!!');
+        		$this->session->set_flashdata('errors', 'Error Ocurrio!!');
         		redirect('orders/update/'.$id, 'refresh');
         	}
         }
@@ -212,7 +212,7 @@ class Orders extends Admin_Controller
         	$orders_data = $this->model_orders->getOrdersData($id);
 
         	if(empty($orders_data)) {
-        		$this->session->set_flashdata('errors', 'The request data does not exists');
+        		$this->session->set_flashdata('errors', 'No existe');
         		redirect('orders', 'refresh');
         	}
 
@@ -313,6 +313,21 @@ class Orders extends Admin_Controller
 			  <!-- Font Awesome -->
 			  <link rel="stylesheet" href="'.base_url('assets/bower_components/font-awesome/css/font-awesome.min.css').'">
 			  <link rel="stylesheet" href="'.base_url('assets/dist/css/AdminLTE.min.css').'">
+			  <style>
+			  @charset "utf-8";
+					/* CSS Document */
+
+					@media print {
+					
+					@page {
+						size: 3.14in 6in;
+						margin: 0.2in;
+						}
+					p {
+						font-size: 11pt;
+						}
+					}
+			  </style>
 			</head>
 			<body onload="window.print();">
 			
@@ -320,10 +335,10 @@ class Orders extends Admin_Controller
 			  <section class="invoice">
 			    <!-- title row -->
 			    <div class="row">
-			      <div class="col-xs-12">
+			      <div class="col-xs-6">
 			        <h2 class="page-header">
 			          '.$company_info['company_name'].'
-			          <small class="pull-right">Fecha: '.$order_date.'</small>
+			          <small >Fecha: '.$order_date.'</small>
 			        </h2>
 			      </div>
 			      <!-- /.col -->
@@ -334,7 +349,7 @@ class Orders extends Admin_Controller
 			      <div class="col-sm-4 invoice-col">
 			        <b>Num. Recibo: </b> '.$order_data['bill_no'].'<br>
 			        <b></b> '.$store_data['name'].'<br>
-			        <b>Nombre Mesa: </b> '.$table_data['table_name'].'<br>
+			        <b>Mesa: </b> '.$table_data['table_name'].'<br>
 			      </div>
 			      <!-- /.col -->
 			    </div>
@@ -342,13 +357,12 @@ class Orders extends Admin_Controller
 
 			    <!-- Table row -->
 			    <div class="row">
-			      <div class="col-xs-12 table-responsive">
+			      <div class="col-xs-6 table-responsive">
 			        <table class="table table-striped">
 			          <thead>
 			          <tr>
+					    <th>Qty</th>
 			            <th>Descripción</th>
-			            <th>Precio</th>
-			            <th>Cantidad</th>
 			            <th>Total</th>
 			          </tr>
 			          </thead>
@@ -359,9 +373,8 @@ class Orders extends Admin_Controller
 			          	$product_data = $this->model_products->getProductData($v['product_id']); 
 			          	
 			          	$html .= '<tr>
+						  	<td>'.$v['qty'].'</td>
 				            <td>'.$product_data['name'].'</td>
-				            <td>'.$this->currency_code . ' ' .$v['rate'].'</td>
-				            <td>'.$v['qty'].'</td>
 				            <td>'.$this->currency_code . ' ' .$v['amount'].'</td>
 			          	</tr>';
 			          }
@@ -375,10 +388,10 @@ class Orders extends Admin_Controller
 
 			    <div class="row">
 			      
-			      <div class="col-xs-6 pull pull-right">
+			      <div class="col-xs-6 ">
 
 			        <div class="table-responsive">
-			          <table class="table">
+			          <table class="table" >
 			            <tr>
 			              <th style="width:50%">Sub Total:</th>
 			              <td>'.$this->currency_code . ' ' .$order_data['gross_amount'].'</td>
@@ -399,10 +412,7 @@ class Orders extends Admin_Controller
 			            }
 			            
 			            
-			            $html .=' <tr>
-			              <th>Descuento:</th>
-			              <td>'.$discount.'</td>
-			            </tr>
+			            $html .=' 
 			            <tr>
 			              <th>Total:</th>
 			              <td>'.$this->currency_code . ' ' .$order_data['net_amount'].'</td>

@@ -3997,3 +3997,591 @@ INFO - 2023-03-22 15:42:42 --> Model Class Initialized
 INFO - 2023-03-22 15:42:42 --> Model Class Initialized
 INFO - 2023-03-22 15:42:42 --> Final output sent to browser
 DEBUG - 2023-03-22 15:42:42 --> Total execution time: 0.0715
+INFO - 2023-03-22 15:48:39 --> Config Class Initialized
+INFO - 2023-03-22 15:48:39 --> Hooks Class Initialized
+DEBUG - 2023-03-22 15:48:39 --> UTF-8 Support Enabled
+INFO - 2023-03-22 15:48:39 --> Utf8 Class Initialized
+INFO - 2023-03-22 15:48:39 --> URI Class Initialized
+INFO - 2023-03-22 15:48:39 --> Router Class Initialized
+INFO - 2023-03-22 15:48:39 --> Output Class Initialized
+INFO - 2023-03-22 15:48:39 --> Security Class Initialized
+DEBUG - 2023-03-22 15:48:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 15:48:39 --> Input Class Initialized
+INFO - 2023-03-22 15:48:39 --> Language Class Initialized
+INFO - 2023-03-22 15:48:39 --> Loader Class Initialized
+INFO - 2023-03-22 15:48:39 --> Helper loaded: url_helper
+INFO - 2023-03-22 15:48:39 --> Helper loaded: form_helper
+INFO - 2023-03-22 15:48:39 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 15:48:39 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 15:48:39 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 15:48:39 --> Form Validation Class Initialized
+INFO - 2023-03-22 15:48:39 --> Controller Class Initialized
+INFO - 2023-03-22 15:48:39 --> Model Class Initialized
+INFO - 2023-03-22 15:48:39 --> Model Class Initialized
+INFO - 2023-03-22 15:48:39 --> Model Class Initialized
+INFO - 2023-03-22 15:48:39 --> Model Class Initialized
+INFO - 2023-03-22 15:48:39 --> Model Class Initialized
+INFO - 2023-03-22 15:48:39 --> Model Class Initialized
+INFO - 2023-03-22 15:48:39 --> Model Class Initialized
+INFO - 2023-03-22 15:48:39 --> Final output sent to browser
+DEBUG - 2023-03-22 15:48:39 --> Total execution time: 0.0714
+INFO - 2023-03-22 15:49:07 --> Config Class Initialized
+INFO - 2023-03-22 15:49:07 --> Hooks Class Initialized
+DEBUG - 2023-03-22 15:49:07 --> UTF-8 Support Enabled
+INFO - 2023-03-22 15:49:07 --> Utf8 Class Initialized
+INFO - 2023-03-22 15:49:07 --> URI Class Initialized
+INFO - 2023-03-22 15:49:07 --> Router Class Initialized
+INFO - 2023-03-22 15:49:07 --> Output Class Initialized
+INFO - 2023-03-22 15:49:07 --> Security Class Initialized
+DEBUG - 2023-03-22 15:49:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 15:49:08 --> Input Class Initialized
+INFO - 2023-03-22 15:49:08 --> Language Class Initialized
+INFO - 2023-03-22 15:49:08 --> Loader Class Initialized
+INFO - 2023-03-22 15:49:08 --> Helper loaded: url_helper
+INFO - 2023-03-22 15:49:08 --> Helper loaded: form_helper
+INFO - 2023-03-22 15:49:08 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 15:49:08 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 15:49:08 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 15:49:08 --> Form Validation Class Initialized
+INFO - 2023-03-22 15:49:08 --> Controller Class Initialized
+INFO - 2023-03-22 15:49:08 --> Model Class Initialized
+INFO - 2023-03-22 15:49:08 --> Model Class Initialized
+INFO - 2023-03-22 15:49:08 --> Model Class Initialized
+INFO - 2023-03-22 15:49:08 --> Model Class Initialized
+INFO - 2023-03-22 15:49:08 --> Model Class Initialized
+INFO - 2023-03-22 15:49:08 --> Model Class Initialized
+INFO - 2023-03-22 15:49:08 --> Model Class Initialized
+INFO - 2023-03-22 15:49:08 --> Final output sent to browser
+DEBUG - 2023-03-22 15:49:08 --> Total execution time: 0.0683
+INFO - 2023-03-22 15:51:31 --> Config Class Initialized
+INFO - 2023-03-22 15:51:31 --> Hooks Class Initialized
+DEBUG - 2023-03-22 15:51:31 --> UTF-8 Support Enabled
+INFO - 2023-03-22 15:51:31 --> Utf8 Class Initialized
+INFO - 2023-03-22 15:51:31 --> URI Class Initialized
+INFO - 2023-03-22 15:51:31 --> Router Class Initialized
+INFO - 2023-03-22 15:51:31 --> Output Class Initialized
+INFO - 2023-03-22 15:51:31 --> Security Class Initialized
+DEBUG - 2023-03-22 15:51:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 15:51:31 --> Input Class Initialized
+INFO - 2023-03-22 15:51:31 --> Language Class Initialized
+INFO - 2023-03-22 15:51:31 --> Loader Class Initialized
+INFO - 2023-03-22 15:51:31 --> Helper loaded: url_helper
+INFO - 2023-03-22 15:51:31 --> Helper loaded: form_helper
+INFO - 2023-03-22 15:51:31 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 15:51:31 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 15:51:31 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 15:51:31 --> Form Validation Class Initialized
+INFO - 2023-03-22 15:51:31 --> Controller Class Initialized
+INFO - 2023-03-22 15:51:31 --> Model Class Initialized
+INFO - 2023-03-22 15:51:31 --> Model Class Initialized
+INFO - 2023-03-22 15:51:31 --> Model Class Initialized
+INFO - 2023-03-22 15:51:31 --> Model Class Initialized
+INFO - 2023-03-22 15:51:31 --> Model Class Initialized
+INFO - 2023-03-22 15:51:31 --> Model Class Initialized
+INFO - 2023-03-22 15:51:31 --> Model Class Initialized
+INFO - 2023-03-22 15:51:31 --> Final output sent to browser
+DEBUG - 2023-03-22 15:51:31 --> Total execution time: 0.0705
+INFO - 2023-03-22 16:06:02 --> Config Class Initialized
+INFO - 2023-03-22 16:06:02 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:06:02 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:06:02 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:06:02 --> URI Class Initialized
+INFO - 2023-03-22 16:06:02 --> Router Class Initialized
+INFO - 2023-03-22 16:06:02 --> Output Class Initialized
+INFO - 2023-03-22 16:06:02 --> Security Class Initialized
+DEBUG - 2023-03-22 16:06:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:06:02 --> Input Class Initialized
+INFO - 2023-03-22 16:06:02 --> Language Class Initialized
+INFO - 2023-03-22 16:06:02 --> Loader Class Initialized
+INFO - 2023-03-22 16:06:02 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:06:02 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:06:02 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:06:02 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:06:02 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:06:02 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:06:02 --> Controller Class Initialized
+INFO - 2023-03-22 16:06:02 --> Model Class Initialized
+INFO - 2023-03-22 16:06:02 --> Model Class Initialized
+INFO - 2023-03-22 16:06:02 --> Model Class Initialized
+INFO - 2023-03-22 16:06:02 --> Model Class Initialized
+INFO - 2023-03-22 16:06:02 --> Model Class Initialized
+INFO - 2023-03-22 16:06:02 --> Model Class Initialized
+INFO - 2023-03-22 16:06:02 --> Model Class Initialized
+INFO - 2023-03-22 16:06:02 --> Final output sent to browser
+DEBUG - 2023-03-22 16:06:02 --> Total execution time: 0.0641
+INFO - 2023-03-22 16:07:08 --> Config Class Initialized
+INFO - 2023-03-22 16:07:08 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:07:08 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:07:08 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:07:08 --> URI Class Initialized
+INFO - 2023-03-22 16:07:08 --> Router Class Initialized
+INFO - 2023-03-22 16:07:08 --> Output Class Initialized
+INFO - 2023-03-22 16:07:08 --> Security Class Initialized
+DEBUG - 2023-03-22 16:07:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:07:08 --> Input Class Initialized
+INFO - 2023-03-22 16:07:08 --> Language Class Initialized
+INFO - 2023-03-22 16:07:08 --> Loader Class Initialized
+INFO - 2023-03-22 16:07:08 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:07:08 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:07:08 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:07:08 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:07:08 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:07:08 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:07:08 --> Controller Class Initialized
+INFO - 2023-03-22 16:07:08 --> Model Class Initialized
+INFO - 2023-03-22 16:07:08 --> Model Class Initialized
+INFO - 2023-03-22 16:07:08 --> Model Class Initialized
+INFO - 2023-03-22 16:07:08 --> Model Class Initialized
+INFO - 2023-03-22 16:07:08 --> Model Class Initialized
+INFO - 2023-03-22 16:07:08 --> Model Class Initialized
+INFO - 2023-03-22 16:07:08 --> Model Class Initialized
+INFO - 2023-03-22 16:07:08 --> Final output sent to browser
+DEBUG - 2023-03-22 16:07:08 --> Total execution time: 0.0812
+INFO - 2023-03-22 16:12:51 --> Config Class Initialized
+INFO - 2023-03-22 16:12:51 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:12:51 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:12:51 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:12:51 --> URI Class Initialized
+INFO - 2023-03-22 16:12:51 --> Router Class Initialized
+INFO - 2023-03-22 16:12:51 --> Output Class Initialized
+INFO - 2023-03-22 16:12:51 --> Security Class Initialized
+DEBUG - 2023-03-22 16:12:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:12:51 --> Input Class Initialized
+INFO - 2023-03-22 16:12:51 --> Language Class Initialized
+INFO - 2023-03-22 16:12:51 --> Loader Class Initialized
+INFO - 2023-03-22 16:12:51 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:12:51 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:12:51 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:12:51 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:12:51 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:12:51 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:12:51 --> Controller Class Initialized
+INFO - 2023-03-22 16:12:51 --> Model Class Initialized
+INFO - 2023-03-22 16:12:51 --> Model Class Initialized
+INFO - 2023-03-22 16:12:51 --> Model Class Initialized
+INFO - 2023-03-22 16:12:51 --> Model Class Initialized
+INFO - 2023-03-22 16:12:51 --> Model Class Initialized
+INFO - 2023-03-22 16:12:51 --> Model Class Initialized
+INFO - 2023-03-22 16:12:51 --> Model Class Initialized
+INFO - 2023-03-22 16:12:52 --> Final output sent to browser
+DEBUG - 2023-03-22 16:12:52 --> Total execution time: 0.0744
+INFO - 2023-03-22 16:13:09 --> Config Class Initialized
+INFO - 2023-03-22 16:13:09 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:13:09 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:13:09 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:13:09 --> URI Class Initialized
+INFO - 2023-03-22 16:13:09 --> Router Class Initialized
+INFO - 2023-03-22 16:13:09 --> Output Class Initialized
+INFO - 2023-03-22 16:13:09 --> Security Class Initialized
+DEBUG - 2023-03-22 16:13:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:13:09 --> Input Class Initialized
+INFO - 2023-03-22 16:13:09 --> Language Class Initialized
+INFO - 2023-03-22 16:13:09 --> Loader Class Initialized
+INFO - 2023-03-22 16:13:09 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:13:09 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:13:09 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:13:09 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:13:09 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:13:09 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:13:09 --> Controller Class Initialized
+INFO - 2023-03-22 16:13:09 --> Model Class Initialized
+INFO - 2023-03-22 16:13:09 --> Model Class Initialized
+INFO - 2023-03-22 16:13:09 --> Model Class Initialized
+INFO - 2023-03-22 16:13:09 --> Model Class Initialized
+INFO - 2023-03-22 16:13:09 --> Model Class Initialized
+INFO - 2023-03-22 16:13:09 --> Model Class Initialized
+INFO - 2023-03-22 16:13:09 --> Model Class Initialized
+INFO - 2023-03-22 16:13:09 --> Final output sent to browser
+DEBUG - 2023-03-22 16:13:09 --> Total execution time: 0.0663
+INFO - 2023-03-22 16:14:48 --> Config Class Initialized
+INFO - 2023-03-22 16:14:48 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:14:48 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:14:48 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:14:48 --> URI Class Initialized
+INFO - 2023-03-22 16:14:48 --> Router Class Initialized
+INFO - 2023-03-22 16:14:48 --> Output Class Initialized
+INFO - 2023-03-22 16:14:48 --> Security Class Initialized
+DEBUG - 2023-03-22 16:14:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:14:48 --> Input Class Initialized
+INFO - 2023-03-22 16:14:48 --> Language Class Initialized
+INFO - 2023-03-22 16:14:48 --> Loader Class Initialized
+INFO - 2023-03-22 16:14:48 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:14:48 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:14:48 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:14:48 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:14:48 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:14:48 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:14:48 --> Controller Class Initialized
+INFO - 2023-03-22 16:14:48 --> Model Class Initialized
+INFO - 2023-03-22 16:14:48 --> Model Class Initialized
+INFO - 2023-03-22 16:14:48 --> Model Class Initialized
+INFO - 2023-03-22 16:14:48 --> Model Class Initialized
+INFO - 2023-03-22 16:14:48 --> Model Class Initialized
+INFO - 2023-03-22 16:14:48 --> Model Class Initialized
+INFO - 2023-03-22 16:14:48 --> Model Class Initialized
+INFO - 2023-03-22 16:14:48 --> Final output sent to browser
+DEBUG - 2023-03-22 16:14:48 --> Total execution time: 0.0645
+INFO - 2023-03-22 16:15:31 --> Config Class Initialized
+INFO - 2023-03-22 16:15:31 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:15:31 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:15:31 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:15:31 --> URI Class Initialized
+INFO - 2023-03-22 16:15:31 --> Router Class Initialized
+INFO - 2023-03-22 16:15:31 --> Output Class Initialized
+INFO - 2023-03-22 16:15:31 --> Security Class Initialized
+DEBUG - 2023-03-22 16:15:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:15:31 --> Input Class Initialized
+INFO - 2023-03-22 16:15:31 --> Language Class Initialized
+INFO - 2023-03-22 16:15:31 --> Loader Class Initialized
+INFO - 2023-03-22 16:15:31 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:15:31 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:15:31 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:15:31 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:15:31 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:15:31 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:15:31 --> Controller Class Initialized
+INFO - 2023-03-22 16:15:31 --> Model Class Initialized
+INFO - 2023-03-22 16:15:31 --> Model Class Initialized
+INFO - 2023-03-22 16:15:31 --> Model Class Initialized
+INFO - 2023-03-22 16:15:31 --> Model Class Initialized
+INFO - 2023-03-22 16:15:31 --> Model Class Initialized
+INFO - 2023-03-22 16:15:31 --> Model Class Initialized
+INFO - 2023-03-22 16:15:31 --> Model Class Initialized
+INFO - 2023-03-22 16:15:31 --> Final output sent to browser
+DEBUG - 2023-03-22 16:15:31 --> Total execution time: 0.0648
+INFO - 2023-03-22 16:16:02 --> Config Class Initialized
+INFO - 2023-03-22 16:16:02 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:16:02 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:16:02 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:16:02 --> URI Class Initialized
+INFO - 2023-03-22 16:16:02 --> Router Class Initialized
+INFO - 2023-03-22 16:16:02 --> Output Class Initialized
+INFO - 2023-03-22 16:16:02 --> Security Class Initialized
+DEBUG - 2023-03-22 16:16:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:16:02 --> Input Class Initialized
+INFO - 2023-03-22 16:16:02 --> Language Class Initialized
+INFO - 2023-03-22 16:16:02 --> Loader Class Initialized
+INFO - 2023-03-22 16:16:02 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:16:02 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:16:02 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:16:02 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:16:02 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:16:02 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:16:02 --> Controller Class Initialized
+INFO - 2023-03-22 16:16:02 --> Model Class Initialized
+INFO - 2023-03-22 16:16:02 --> Model Class Initialized
+INFO - 2023-03-22 16:16:02 --> Model Class Initialized
+INFO - 2023-03-22 16:16:02 --> Model Class Initialized
+INFO - 2023-03-22 16:16:02 --> Model Class Initialized
+INFO - 2023-03-22 16:16:02 --> Model Class Initialized
+INFO - 2023-03-22 16:16:02 --> Model Class Initialized
+INFO - 2023-03-22 16:16:02 --> Final output sent to browser
+DEBUG - 2023-03-22 16:16:02 --> Total execution time: 0.0687
+INFO - 2023-03-22 16:17:56 --> Config Class Initialized
+INFO - 2023-03-22 16:17:56 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:17:56 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:17:56 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:17:56 --> URI Class Initialized
+INFO - 2023-03-22 16:17:56 --> Router Class Initialized
+INFO - 2023-03-22 16:17:56 --> Output Class Initialized
+INFO - 2023-03-22 16:17:56 --> Security Class Initialized
+DEBUG - 2023-03-22 16:17:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:17:56 --> Input Class Initialized
+INFO - 2023-03-22 16:17:56 --> Language Class Initialized
+INFO - 2023-03-22 16:17:56 --> Loader Class Initialized
+INFO - 2023-03-22 16:17:56 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:17:56 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:17:56 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:17:56 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:17:56 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:17:56 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:17:56 --> Controller Class Initialized
+INFO - 2023-03-22 16:17:56 --> Model Class Initialized
+INFO - 2023-03-22 16:17:56 --> Model Class Initialized
+INFO - 2023-03-22 16:17:56 --> Model Class Initialized
+INFO - 2023-03-22 16:17:56 --> Model Class Initialized
+INFO - 2023-03-22 16:17:56 --> Model Class Initialized
+INFO - 2023-03-22 16:17:56 --> Model Class Initialized
+INFO - 2023-03-22 16:17:56 --> Model Class Initialized
+INFO - 2023-03-22 16:17:56 --> Final output sent to browser
+DEBUG - 2023-03-22 16:17:56 --> Total execution time: 0.0719
+INFO - 2023-03-22 16:18:20 --> Config Class Initialized
+INFO - 2023-03-22 16:18:20 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:18:20 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:18:20 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:18:20 --> URI Class Initialized
+INFO - 2023-03-22 16:18:20 --> Router Class Initialized
+INFO - 2023-03-22 16:18:20 --> Output Class Initialized
+INFO - 2023-03-22 16:18:20 --> Security Class Initialized
+DEBUG - 2023-03-22 16:18:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:18:20 --> Input Class Initialized
+INFO - 2023-03-22 16:18:20 --> Language Class Initialized
+INFO - 2023-03-22 16:18:20 --> Loader Class Initialized
+INFO - 2023-03-22 16:18:20 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:18:20 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:18:20 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:18:20 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:18:20 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:18:20 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:18:20 --> Controller Class Initialized
+INFO - 2023-03-22 16:18:20 --> Model Class Initialized
+INFO - 2023-03-22 16:18:20 --> Model Class Initialized
+INFO - 2023-03-22 16:18:20 --> Model Class Initialized
+INFO - 2023-03-22 16:18:20 --> Model Class Initialized
+INFO - 2023-03-22 16:18:20 --> Model Class Initialized
+INFO - 2023-03-22 16:18:20 --> Model Class Initialized
+INFO - 2023-03-22 16:18:20 --> Model Class Initialized
+INFO - 2023-03-22 16:18:20 --> Final output sent to browser
+DEBUG - 2023-03-22 16:18:20 --> Total execution time: 0.0722
+INFO - 2023-03-22 16:21:14 --> Config Class Initialized
+INFO - 2023-03-22 16:21:14 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:21:14 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:21:14 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:21:14 --> URI Class Initialized
+INFO - 2023-03-22 16:21:14 --> Router Class Initialized
+INFO - 2023-03-22 16:21:14 --> Output Class Initialized
+INFO - 2023-03-22 16:21:14 --> Security Class Initialized
+DEBUG - 2023-03-22 16:21:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:21:14 --> Input Class Initialized
+INFO - 2023-03-22 16:21:14 --> Language Class Initialized
+INFO - 2023-03-22 16:21:14 --> Loader Class Initialized
+INFO - 2023-03-22 16:21:14 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:21:14 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:21:14 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:21:14 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:21:14 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:21:14 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:21:14 --> Controller Class Initialized
+INFO - 2023-03-22 16:21:14 --> Model Class Initialized
+INFO - 2023-03-22 16:21:14 --> Model Class Initialized
+INFO - 2023-03-22 16:21:14 --> Model Class Initialized
+INFO - 2023-03-22 16:21:14 --> Model Class Initialized
+INFO - 2023-03-22 16:21:14 --> Model Class Initialized
+INFO - 2023-03-22 16:21:14 --> Model Class Initialized
+INFO - 2023-03-22 16:21:14 --> Model Class Initialized
+INFO - 2023-03-22 16:21:14 --> Final output sent to browser
+DEBUG - 2023-03-22 16:21:14 --> Total execution time: 0.0799
+INFO - 2023-03-22 16:21:30 --> Config Class Initialized
+INFO - 2023-03-22 16:21:30 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:21:30 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:21:30 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:21:30 --> URI Class Initialized
+INFO - 2023-03-22 16:21:30 --> Router Class Initialized
+INFO - 2023-03-22 16:21:30 --> Output Class Initialized
+INFO - 2023-03-22 16:21:30 --> Security Class Initialized
+DEBUG - 2023-03-22 16:21:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:21:30 --> Input Class Initialized
+INFO - 2023-03-22 16:21:30 --> Language Class Initialized
+INFO - 2023-03-22 16:21:30 --> Loader Class Initialized
+INFO - 2023-03-22 16:21:30 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:21:30 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:21:30 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:21:30 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:21:30 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:21:30 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:21:30 --> Controller Class Initialized
+INFO - 2023-03-22 16:21:30 --> Model Class Initialized
+INFO - 2023-03-22 16:21:30 --> Model Class Initialized
+INFO - 2023-03-22 16:21:30 --> Model Class Initialized
+INFO - 2023-03-22 16:21:30 --> Model Class Initialized
+INFO - 2023-03-22 16:21:30 --> Model Class Initialized
+INFO - 2023-03-22 16:21:30 --> Model Class Initialized
+INFO - 2023-03-22 16:21:30 --> Model Class Initialized
+INFO - 2023-03-22 16:21:30 --> Final output sent to browser
+DEBUG - 2023-03-22 16:21:30 --> Total execution time: 0.0789
+INFO - 2023-03-22 16:26:24 --> Config Class Initialized
+INFO - 2023-03-22 16:26:24 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:26:24 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:26:24 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:26:24 --> URI Class Initialized
+INFO - 2023-03-22 16:26:24 --> Router Class Initialized
+INFO - 2023-03-22 16:26:24 --> Output Class Initialized
+INFO - 2023-03-22 16:26:24 --> Security Class Initialized
+DEBUG - 2023-03-22 16:26:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:26:24 --> Input Class Initialized
+INFO - 2023-03-22 16:26:24 --> Language Class Initialized
+INFO - 2023-03-22 16:26:24 --> Loader Class Initialized
+INFO - 2023-03-22 16:26:24 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:26:24 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:26:24 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:26:24 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:26:24 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:26:24 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:26:24 --> Controller Class Initialized
+INFO - 2023-03-22 16:26:24 --> Model Class Initialized
+INFO - 2023-03-22 16:26:24 --> Model Class Initialized
+INFO - 2023-03-22 16:26:24 --> Model Class Initialized
+INFO - 2023-03-22 16:26:24 --> Model Class Initialized
+INFO - 2023-03-22 16:26:24 --> Model Class Initialized
+INFO - 2023-03-22 16:26:24 --> Model Class Initialized
+INFO - 2023-03-22 16:26:24 --> Model Class Initialized
+INFO - 2023-03-22 16:26:24 --> Final output sent to browser
+DEBUG - 2023-03-22 16:26:24 --> Total execution time: 0.0706
+INFO - 2023-03-22 16:26:40 --> Config Class Initialized
+INFO - 2023-03-22 16:26:40 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:26:40 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:26:40 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:26:40 --> URI Class Initialized
+INFO - 2023-03-22 16:26:40 --> Router Class Initialized
+INFO - 2023-03-22 16:26:40 --> Output Class Initialized
+INFO - 2023-03-22 16:26:40 --> Security Class Initialized
+DEBUG - 2023-03-22 16:26:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:26:40 --> Input Class Initialized
+INFO - 2023-03-22 16:26:40 --> Language Class Initialized
+INFO - 2023-03-22 16:26:40 --> Loader Class Initialized
+INFO - 2023-03-22 16:26:40 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:26:40 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:26:40 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:26:40 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:26:40 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:26:40 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:26:40 --> Controller Class Initialized
+INFO - 2023-03-22 16:26:40 --> Model Class Initialized
+INFO - 2023-03-22 16:26:40 --> Model Class Initialized
+INFO - 2023-03-22 16:26:40 --> Model Class Initialized
+INFO - 2023-03-22 16:26:40 --> Model Class Initialized
+INFO - 2023-03-22 16:26:40 --> Model Class Initialized
+INFO - 2023-03-22 16:26:40 --> Model Class Initialized
+INFO - 2023-03-22 16:26:40 --> Model Class Initialized
+INFO - 2023-03-22 16:26:40 --> Final output sent to browser
+DEBUG - 2023-03-22 16:26:40 --> Total execution time: 0.0722
+INFO - 2023-03-22 16:26:55 --> Config Class Initialized
+INFO - 2023-03-22 16:26:55 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:26:55 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:26:55 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:26:55 --> URI Class Initialized
+INFO - 2023-03-22 16:26:55 --> Router Class Initialized
+INFO - 2023-03-22 16:26:55 --> Output Class Initialized
+INFO - 2023-03-22 16:26:55 --> Security Class Initialized
+DEBUG - 2023-03-22 16:26:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:26:55 --> Input Class Initialized
+INFO - 2023-03-22 16:26:55 --> Language Class Initialized
+INFO - 2023-03-22 16:26:55 --> Loader Class Initialized
+INFO - 2023-03-22 16:26:55 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:26:55 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:26:55 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:26:55 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:26:55 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:26:55 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:26:55 --> Controller Class Initialized
+INFO - 2023-03-22 16:26:55 --> Model Class Initialized
+INFO - 2023-03-22 16:26:55 --> Model Class Initialized
+INFO - 2023-03-22 16:26:55 --> Model Class Initialized
+INFO - 2023-03-22 16:26:55 --> Model Class Initialized
+INFO - 2023-03-22 16:26:55 --> Model Class Initialized
+INFO - 2023-03-22 16:26:55 --> Model Class Initialized
+INFO - 2023-03-22 16:26:55 --> Model Class Initialized
+INFO - 2023-03-22 16:26:55 --> Final output sent to browser
+DEBUG - 2023-03-22 16:26:55 --> Total execution time: 0.0667
+INFO - 2023-03-22 16:27:07 --> Config Class Initialized
+INFO - 2023-03-22 16:27:07 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:27:07 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:27:07 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:27:07 --> URI Class Initialized
+INFO - 2023-03-22 16:27:07 --> Router Class Initialized
+INFO - 2023-03-22 16:27:07 --> Output Class Initialized
+INFO - 2023-03-22 16:27:07 --> Security Class Initialized
+DEBUG - 2023-03-22 16:27:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:27:07 --> Input Class Initialized
+INFO - 2023-03-22 16:27:07 --> Language Class Initialized
+INFO - 2023-03-22 16:27:07 --> Loader Class Initialized
+INFO - 2023-03-22 16:27:07 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:27:07 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:27:07 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:27:07 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:27:07 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:27:07 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:27:07 --> Controller Class Initialized
+INFO - 2023-03-22 16:27:07 --> Model Class Initialized
+INFO - 2023-03-22 16:27:07 --> Model Class Initialized
+INFO - 2023-03-22 16:27:07 --> Model Class Initialized
+INFO - 2023-03-22 16:27:07 --> Model Class Initialized
+INFO - 2023-03-22 16:27:07 --> Model Class Initialized
+INFO - 2023-03-22 16:27:07 --> Model Class Initialized
+INFO - 2023-03-22 16:27:07 --> Model Class Initialized
+INFO - 2023-03-22 16:27:07 --> Final output sent to browser
+DEBUG - 2023-03-22 16:27:07 --> Total execution time: 0.0815
+INFO - 2023-03-22 16:27:51 --> Config Class Initialized
+INFO - 2023-03-22 16:27:51 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:27:51 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:27:51 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:27:51 --> URI Class Initialized
+INFO - 2023-03-22 16:27:51 --> Router Class Initialized
+INFO - 2023-03-22 16:27:51 --> Output Class Initialized
+INFO - 2023-03-22 16:27:51 --> Security Class Initialized
+DEBUG - 2023-03-22 16:27:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:27:51 --> Input Class Initialized
+INFO - 2023-03-22 16:27:51 --> Language Class Initialized
+INFO - 2023-03-22 16:27:51 --> Loader Class Initialized
+INFO - 2023-03-22 16:27:51 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:27:51 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:27:51 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:27:51 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:27:51 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:27:51 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:27:51 --> Controller Class Initialized
+INFO - 2023-03-22 16:27:51 --> Model Class Initialized
+INFO - 2023-03-22 16:27:51 --> Model Class Initialized
+INFO - 2023-03-22 16:27:51 --> Model Class Initialized
+INFO - 2023-03-22 16:27:51 --> Model Class Initialized
+INFO - 2023-03-22 16:27:51 --> Model Class Initialized
+INFO - 2023-03-22 16:27:51 --> Model Class Initialized
+INFO - 2023-03-22 16:27:51 --> Model Class Initialized
+INFO - 2023-03-22 16:27:51 --> Final output sent to browser
+DEBUG - 2023-03-22 16:27:51 --> Total execution time: 0.0714
+INFO - 2023-03-22 16:28:27 --> Config Class Initialized
+INFO - 2023-03-22 16:28:27 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:28:27 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:28:27 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:28:27 --> URI Class Initialized
+INFO - 2023-03-22 16:28:27 --> Router Class Initialized
+INFO - 2023-03-22 16:28:27 --> Output Class Initialized
+INFO - 2023-03-22 16:28:27 --> Security Class Initialized
+DEBUG - 2023-03-22 16:28:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:28:27 --> Input Class Initialized
+INFO - 2023-03-22 16:28:27 --> Language Class Initialized
+INFO - 2023-03-22 16:28:27 --> Loader Class Initialized
+INFO - 2023-03-22 16:28:27 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:28:27 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:28:27 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:28:27 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:28:27 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:28:27 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:28:27 --> Controller Class Initialized
+INFO - 2023-03-22 16:28:27 --> Model Class Initialized
+INFO - 2023-03-22 16:28:27 --> Model Class Initialized
+INFO - 2023-03-22 16:28:27 --> Model Class Initialized
+INFO - 2023-03-22 16:28:27 --> Model Class Initialized
+INFO - 2023-03-22 16:28:27 --> Model Class Initialized
+INFO - 2023-03-22 16:28:27 --> Model Class Initialized
+INFO - 2023-03-22 16:28:27 --> Model Class Initialized
+INFO - 2023-03-22 16:28:27 --> Final output sent to browser
+DEBUG - 2023-03-22 16:28:27 --> Total execution time: 0.0856
+INFO - 2023-03-22 16:28:45 --> Config Class Initialized
+INFO - 2023-03-22 16:28:45 --> Hooks Class Initialized
+DEBUG - 2023-03-22 16:28:45 --> UTF-8 Support Enabled
+INFO - 2023-03-22 16:28:45 --> Utf8 Class Initialized
+INFO - 2023-03-22 16:28:45 --> URI Class Initialized
+INFO - 2023-03-22 16:28:45 --> Router Class Initialized
+INFO - 2023-03-22 16:28:45 --> Output Class Initialized
+INFO - 2023-03-22 16:28:45 --> Security Class Initialized
+DEBUG - 2023-03-22 16:28:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-03-22 16:28:45 --> Input Class Initialized
+INFO - 2023-03-22 16:28:45 --> Language Class Initialized
+INFO - 2023-03-22 16:28:45 --> Loader Class Initialized
+INFO - 2023-03-22 16:28:45 --> Helper loaded: url_helper
+INFO - 2023-03-22 16:28:45 --> Helper loaded: form_helper
+INFO - 2023-03-22 16:28:45 --> Database Driver Class Initialized
+DEBUG - 2023-03-22 16:28:45 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-03-22 16:28:45 --> Session: Class initialized using 'files' driver.
+INFO - 2023-03-22 16:28:45 --> Form Validation Class Initialized
+INFO - 2023-03-22 16:28:45 --> Controller Class Initialized
+INFO - 2023-03-22 16:28:45 --> Model Class Initialized
+INFO - 2023-03-22 16:28:45 --> Model Class Initialized
+INFO - 2023-03-22 16:28:45 --> Model Class Initialized
+INFO - 2023-03-22 16:28:45 --> Model Class Initialized
+INFO - 2023-03-22 16:28:45 --> Model Class Initialized
+INFO - 2023-03-22 16:28:45 --> Model Class Initialized
+INFO - 2023-03-22 16:28:45 --> Model Class Initialized
+INFO - 2023-03-22 16:28:45 --> Final output sent to browser
+DEBUG - 2023-03-22 16:28:45 --> Total execution time: 0.0758
