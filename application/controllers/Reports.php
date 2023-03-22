@@ -31,6 +31,10 @@ class Reports extends Admin_Controller
 		$order_data = $this->model_reports->getOrderData($today_year);
 		$this->data['report_years'] = $this->model_reports->getOrderYear();
 		
+		//agregue para gastos
+		$gasto_data = $this->model_reports->getGastoData($today_year);
+		$this->data['report_years'] = $this->model_reports->getGastoYear();
+		
 
 		$final_order_data = array();
 		foreach ($order_data as $k => $v) {
@@ -49,10 +53,28 @@ class Reports extends Admin_Controller
 			}
 			
 		}
+		$final_gasto_data = array();
+		foreach ($gasto_data as $k => $v) {
+			
+			if(count($v) > 1) {
+				$total_amount_earned = array();
+				foreach ($v as $k2 => $v2) {
+					if($v2) {
+						$total_amount_earned[] = $v2['mon_gasto'];						
+					}
+				}
+				$final_gasto_data[$k] = array_sum($total_amount_earned);	
+			}
+			else {
+				$final_gasto_data[$k] = 0;	
+			}
+			
+		}
 		
 		$this->data['selected_year'] = $today_year;
 		$this->data['company_currency'] = $this->company_currency();
 		$this->data['results'] = $final_order_data;
+		$this->data['results2'] = $final_gasto_data;
 
 		$this->render_template('reports/index', $this->data);
 	}

@@ -28,7 +28,7 @@
                 <?php endforeach ?>
               </select>
             </div>
-            <button type="submit" class="btn btn-default">Enviar</button>
+            <button type="submit" class="btn btn-default">Cargar</button>
           </form>
         </div>
 
@@ -64,7 +64,7 @@
           <!-- /.box -->
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Total Ordenes Pagadas - Reporte Data</h3>
+              <h3 class="box-title">Totales Generales - Reporte</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -72,19 +72,25 @@
                 <thead>
                 <tr>
                   <th>Mes - Año</th>
-                  <th>Total</th>
+                  <th>Total Ventas</th>
+                  <th>Total Gastos</th>
+                  <th>Total Saldos</th>
                 </tr>
                 </thead>
                 <tbody>
-
+                <?php $total_saldo = 0.0;?>
                   <?php foreach ($results as $k => $v): ?>
                     <tr>
                       <td><?php echo $k; ?></td>
                       <td><?php 
-                      
                         echo $company_currency .' ' . $v;
-                        //echo $v;
-                      
+                      ?></td>
+                      <td><?php 
+                        echo $company_currency .' ' . $results2[$k];
+                      ?></td>
+                      <td><?php 
+                        echo $company_currency .' ' . (floatval($v) - floatval($results2[$k]));
+                         $total_saldo = $total_saldo + (floatval($v) - floatval($results2[$k]));
                       ?></td>
                     </tr>
                   <?php endforeach ?>
@@ -96,6 +102,12 @@
                     <th>
                       <?php echo $company_currency . ' ' . array_sum($results); ?>
                       <?php //echo array_sum($results); ?>
+                    </th>
+                    <th>
+                      <?php echo $company_currency . ' ' . array_sum($results2); ?>
+                    </th>
+                    <th>
+                      <?php echo $company_currency . ' ' . $total_saldo; ?>
                     </th>
                   </tr>
                 </tbody>
@@ -123,6 +135,7 @@
     }); 
 
     var report_data = <?php echo '[' . implode(',', $results) . ']'; ?>;
+    var report_data2 = <?php echo '[' . implode(',', $results2) . ']'; ?>;
     
 
     $(function () {
