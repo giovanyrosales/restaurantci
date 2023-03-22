@@ -255,7 +255,7 @@ class Orders extends Admin_Controller
             $delete = $this->model_orders->remove($order_id);
             if($delete == true) {
                 $response['success'] = true;
-                $response['messages'] = "Successfully removed"; 
+                $response['messages'] = "Borrado Exitosamente"; 
             }
             else {
                 $response['success'] = false;
@@ -264,7 +264,7 @@ class Orders extends Admin_Controller
         }
         else {
             $response['success'] = false;
-            $response['messages'] = "Refersh the page again!!";
+            $response['messages'] = "Refresca e intenta de nuevo!!";
         }
 
         echo json_encode($response); 
@@ -287,7 +287,7 @@ class Orders extends Admin_Controller
 			$store_data = $this->model_stores->getStoresData($order_data['store_id']);
 
 			$order_date = date('d/m/Y', $order_data['date_time']);
-			$paid_status = ($order_data['paid_status'] == 1) ? "Paid" : "Unpaid";
+			$paid_status = ($order_data['paid_status'] == 1) ? "Pagado" : "Sin Pagar";
 
 			$table_data = $this->model_tables->getTableData($order_data['table_id']);
 
@@ -305,7 +305,7 @@ class Orders extends Admin_Controller
 			<head>
 			  <meta charset="utf-8">
 			  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-			  <title>Invoice</title>
+			  <title>Recibo</title>
 			  <!-- Tell the browser to be responsive to screen width -->
 			  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 			  <!-- Bootstrap 3.3.7 -->
@@ -323,7 +323,7 @@ class Orders extends Admin_Controller
 			      <div class="col-xs-12">
 			        <h2 class="page-header">
 			          '.$company_info['company_name'].'
-			          <small class="pull-right">Date: '.$order_date.'</small>
+			          <small class="pull-right">Fecha: '.$order_date.'</small>
 			        </h2>
 			      </div>
 			      <!-- /.col -->
@@ -332,10 +332,9 @@ class Orders extends Admin_Controller
 			    <div class="row invoice-info">
 			      
 			      <div class="col-sm-4 invoice-col">
-			        <b>Bill ID: </b> '.$order_data['bill_no'].'<br>
-			        <b>Store Name: </b> '.$store_data['name'].'<br>
-			        <b>Table name: </b> '.$table_data['table_name'].'<br>
-			        <b>Total items: </b> '.count($orders_items).'<br><br>
+			        <b>Num. Recibo: </b> '.$order_data['bill_no'].'<br>
+			        <b></b> '.$store_data['name'].'<br>
+			        <b>Nombre Mesa: </b> '.$table_data['table_name'].'<br>
 			      </div>
 			      <!-- /.col -->
 			    </div>
@@ -347,10 +346,10 @@ class Orders extends Admin_Controller
 			        <table class="table table-striped">
 			          <thead>
 			          <tr>
-			            <th>Product name</th>
-			            <th>Price</th>
-			            <th>Qty</th>
-			            <th>Amount</th>
+			            <th>Descripción</th>
+			            <th>Precio</th>
+			            <th>Cantidad</th>
+			            <th>Total</th>
 			          </tr>
 			          </thead>
 			          <tbody>'; 
@@ -381,35 +380,35 @@ class Orders extends Admin_Controller
 			        <div class="table-responsive">
 			          <table class="table">
 			            <tr>
-			              <th style="width:50%">Gross Amount:</th>
+			              <th style="width:50%">Sub Total:</th>
 			              <td>'.$this->currency_code . ' ' .$order_data['gross_amount'].'</td>
 			            </tr>';
 
 			            if($order_data['service_charge_amount'] > 0) {
 			            	$html .= '<tr>
-				              <th>Service Charge ('.$order_data['service_charge_rate'].'%)</th>
+				              <th>Propina ('.$order_data['service_charge_rate'].'%)</th>
 				              <td>'.$this->currency_code .' '.$order_data['service_charge_amount'].'</td>
 				            </tr>';
 			            }
 
 			            if($order_data['vat_charge_amount'] > 0) {
 			            	$html .= '<tr>
-				              <th>Vat Charge ('.$order_data['vat_charge_rate'].'%)</th>
+				              <th>IVA ('.$order_data['vat_charge_rate'].'%)</th>
 				              <td>'.$this->currency_code .' '.$order_data['vat_charge_amount'].'</td>
 				            </tr>';
 			            }
 			            
 			            
 			            $html .=' <tr>
-			              <th>Discount:</th>
+			              <th>Descuento:</th>
 			              <td>'.$discount.'</td>
 			            </tr>
 			            <tr>
-			              <th>Net Amount:</th>
+			              <th>Total:</th>
 			              <td>'.$this->currency_code . ' ' .$order_data['net_amount'].'</td>
 			            </tr>
 			            <tr>
-			              <th>Paid Status:</th>
+			              <th>Estado:</th>
 			              <td>'.$paid_status.'</td>
 			            </tr>
 			          </table>

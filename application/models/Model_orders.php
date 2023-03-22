@@ -52,7 +52,7 @@ class Model_orders extends CI_Model
 		$user_data = $this->model_users->getUserData($user_id);
 		$store_id = $user_data['store_id'];
 
-		$bill_no = 'CDSTRO-'.strtoupper(substr(md5(uniqid(mt_rand(), true)), 0, 4));
+		$bill_no = strtoupper(substr(md5(uniqid(mt_rand(), true)), 0, 4));
     	$data = array(
     		'bill_no' => $bill_no,
     		'date_time' => strtotime(date('Y-m-d h:i:s a')),
