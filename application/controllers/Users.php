@@ -50,7 +50,7 @@ class Users extends Admin_Controller
 		$this->form_validation->set_rules('store', 'Store', 'trim|required');
 		$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[5]|max_length[12]|is_unique[users.username]');
 		$this->form_validation->set_rules('email', 'Email', 'trim|required|is_unique[users.email]');
-		$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[8]');
+		$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]');
 		$this->form_validation->set_rules('cpassword', 'Confirm password', 'trim|required|matches[password]');
 		$this->form_validation->set_rules('fname', 'First name', 'trim|required');
 		
@@ -138,7 +138,7 @@ class Users extends Admin_Controller
 		        	}
 		        }
 		        else {
-		        	$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[8]');
+		        	$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]');
 					$this->form_validation->set_rules('cpassword', 'Confirm password', 'trim|required|matches[password]');
 
 					if($this->form_validation->run() == TRUE) {
@@ -284,7 +284,7 @@ class Users extends Admin_Controller
 		        	}
 		        }
 		        else {
-		        	$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[8]');
+		        	$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]');
 					$this->form_validation->set_rules('cpassword', 'Confirm password', 'trim|required|matches[password]');
 
 					if($this->form_validation->run() == TRUE) {

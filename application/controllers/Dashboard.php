@@ -32,7 +32,7 @@ class Dashboard extends Admin_Controller
 		$this->data['total_category'] = $this->model_category->countTotalCategory();
 
 		$user_id = $this->session->userdata('id');
-		$is_admin = ($user_id == 1) ? true :false;
+		$is_admin = ($user_id == 1 or $user_id == 3 ) ? true :false;
 
 		$this->data['is_admin'] = $is_admin;
 		$this->render_template('dashboard', $this->data);
