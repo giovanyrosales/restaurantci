@@ -102,6 +102,10 @@
 .skin-yellow .main-header .logo:hover {
   background-color:transparent;
 }
+table {
+  important:  !important;
+  table-layout: fixed;
+}
 </style>
 
 </head>

@@ -51,7 +51,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Total Ordenes Pagadas - Reporte</h3>
+              <h3 class="box-title">Total Ventas - Reporte</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -73,8 +73,8 @@
                 <tr>
                   <th>Mes - Año</th>
                   <th>Total Ventas</th>
-                  <th>Total Gastos</th>
-                  <th>Total Saldos</th>
+                  <th>Total Gastos en el mes</th>
+                  <th>Total Ganancias en el mes </th>
                 </tr>
                 </thead>
                 <tbody>

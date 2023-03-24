@@ -76,13 +76,13 @@
                       <input type="radio" name="gender" id="male" value="1" <?php if($user_data['gender'] == 1) {
                         echo "checked";
                       } ?>>
-                      Male
+                      Hombre
                     </label>
                     <label>
                       <input type="radio" name="gender" id="female" value="2" <?php if($user_data['gender'] == 2) {
                         echo "checked";
                       } ?>>
-                      Female
+                      Mujer
                     </label>
                   </div>
                 </div>

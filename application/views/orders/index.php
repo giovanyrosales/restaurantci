@@ -49,7 +49,7 @@
               <thead>
               <tr>
                 <th>Ticket No.</th>
-                <th>Empresa</th>
+                <th>Mesa</th>
                 <th>Fecha</th>
                 <th>Productos</th>
                 <th>Total</th>

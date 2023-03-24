@@ -53,6 +53,7 @@ class Orders extends Admin_Controller
 		foreach ($data as $key => $value) {
 
 			$store_data = $this->model_stores->getStoresData($value['store_id']);
+			$table_data = $this->model_tables->getTableData($value['table_id']);
 
 			$count_total_item = $this->model_orders->countOrderItem($value['id']);
 			$date = date('d-m-Y', $value['date_time']);
@@ -84,7 +85,7 @@ class Orders extends Admin_Controller
 
 			$result['data'][$key] = array(
 				$value['bill_no'],
-				$store_data['name'],
+				$table_data['table_name'],
 				$date_time,
 				$count_total_item,
 				$value['net_amount'],
@@ -320,11 +321,11 @@ class Orders extends Admin_Controller
 					@media print {
 					
 					@page {
-						size: 3.14in 6in;
-						margin: 0.2in;
+						size: 3in 8in;
+					
 						}
 					p {
-						font-size: 11pt;
+						font-size: 9pt;
 						}
 					}
 			  </style>
@@ -335,7 +336,7 @@ class Orders extends Admin_Controller
 			  <section class="invoice">
 			    <!-- title row -->
 			    <div class="row">
-			      <div class="col-xs-6">
+			      <div class="col-xs-12">
 			        <h2 class="page-header">
 			          '.$company_info['company_name'].'
 			          <small >Fecha: '.$order_date.'</small>
@@ -346,9 +347,8 @@ class Orders extends Admin_Controller
 			    <!-- info row -->
 			    <div class="row invoice-info">
 			      
-			      <div class="col-sm-4 invoice-col">
-			        <b>Num. Recibo: </b> '.$order_data['bill_no'].'<br>
-			        <b></b> '.$store_data['name'].'<br>
+			      <div class="col-sm-12 invoice-col">
+			        <b>Recibo: </b> '.$order_data['bill_no'].'<br>
 			        <b>Mesa: </b> '.$table_data['table_name'].'<br>
 			      </div>
 			      <!-- /.col -->
@@ -357,7 +357,7 @@ class Orders extends Admin_Controller
 
 			    <!-- Table row -->
 			    <div class="row">
-			      <div class="col-xs-6 table-responsive">
+			      <div class="col-xs-12 table-responsive">
 			        <table class="table table-striped">
 			          <thead>
 			          <tr>
@@ -388,7 +388,7 @@ class Orders extends Admin_Controller
 
 			    <div class="row">
 			      
-			      <div class="col-xs-6 ">
+			      <div class="col-xs-12 ">
 
 			        <div class="table-responsive">
 			          <table class="table" >
@@ -422,6 +422,7 @@ class Orders extends Admin_Controller
 			              <td>'.$paid_status.'</td>
 			            </tr>
 			          </table>
+					  <br><br><br><br><br><br>
 			        </div>
 			      </div>
 			      <!-- /.col -->
