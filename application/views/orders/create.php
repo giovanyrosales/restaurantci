@@ -46,10 +46,10 @@
                 <?php echo validation_errors(); ?>
 
                 <div class="form-group">
-                  <label for="gross_amount" class="col-sm-12 control-label">Date: <?php echo date('d-m-Y') ?></label>
+                  <label for="gross_amount" class="col-sm-12 control-label">Fecha: <?php echo date('d-m-Y') ?></label>
                 </div>
                 <div class="form-group">
-                  <label for="gross_amount" class="col-sm-12 control-label">Time: <?php echo date('h:i a') ?></label>
+                  <label for="gross_amount" class="col-sm-12 control-label">Hora: <?php echo date('h:i a') ?></label>
                 </div>
 
                 <div class="col-md-4 col-xs-12 pull pull-left">
@@ -65,7 +65,12 @@
                       </select>
                     </div>
                   </div>
-
+                  <div class="form-group">
+                    <label for="notas" class="col-sm-5 control-label" style="text-align:left;">Notas</label>
+                    <div class="col-sm-7">
+                      <textarea class="form-control" id="notas" name="notas" rows="2" cols="40"></textarea>
+                    </div>
+                  </div>
                 </div>
                 
                 

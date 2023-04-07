@@ -63,6 +63,8 @@ class Model_orders extends CI_Model
     		'vat_charge_amount' => ($this->input->post('vat_charge_value') > 0) ? $this->input->post('vat_charge_value') : 0,
     		'net_amount' => $this->input->post('net_amount_value'),
     		'discount' => $this->input->post('discount'),
+			'notas' => $this->input->post('notas'),
+			'estado' => 1,
     		'paid_status' => 2,
     		'user_id' => $user_id,
     		'table_id' => $this->input->post('table_name'),
@@ -127,6 +129,7 @@ class Model_orders extends CI_Model
 	    		'vat_charge_amount' => ($this->input->post('vat_charge_value') > 0) ? $this->input->post('vat_charge_value') : 0,
 	    		'net_amount' => $this->input->post('net_amount_value'),
 	    		'discount' => $this->input->post('discount'),
+				'notas' => $this->input->post('notas'),
 	    		'paid_status' => $this->input->post('paid_status'),
 	    		'user_id' => $user_id,
 	    		'table_id' => $this->input->post('table_name'),
@@ -159,6 +162,24 @@ class Model_orders extends CI_Model
 		}
 	}
 
+	public function updateEstado($id)
+	{
+		if($id) {
+			// update the table info
+
+			$order_data = $this->getOrdersData($id);
+			$data = $this->model_tables->update($order_data['table_id'], array('available' => 1));
+
+				$data = array(
+	    		'estado' => 2
+	    	);
+
+			$this->db->where('id', $id);
+			$update = $this->db->update('orders', $data);
+
+			return true;
+		}
+	}
 
 
 	public function remove($id)
