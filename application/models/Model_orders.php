@@ -8,6 +8,7 @@ class Model_orders extends CI_Model
 
 		$this->load->model('model_tables');
 		$this->load->model('model_users');
+		$this->load->model('model_category');
 	}
 
 	/* get the orders data */
@@ -142,7 +143,7 @@ class Model_orders extends CI_Model
 			// now remove the order item data 
 			$this->db->where('order_id', $id);
 			$this->db->delete('order_items');
-
+			$newqty = 0;
 			$count_product = count($this->input->post('product'));
 	    	for($x = 0; $x < $count_product; $x++) {
 	    		$items = array(
@@ -152,6 +153,30 @@ class Model_orders extends CI_Model
 	    			'rate' => $this->input->post('rate_value')[$x],
 	    			'amount' => $this->input->post('amount_value')[$x],
 	    		);
+				//Restar cantidad de los productos si es cerveza
+				if($data['paid_status'] == 1){
+					$product_data = $this->model_products->getProductDataAll($this->input->post('product')[$x]);
+							//decode porq en la db esta guardado como arreglo
+							$category_ids = json_decode($product_data['category_id']);
+							$store_name = array();
+							//recorro el arreglo de la base
+							foreach ($category_ids as $k => $v) {
+								//capturo el nombre de la categoria
+								$store_data = $this->model_category->getCategoryData($v);
+								$store_name[] = $store_data['name'];
+							}
+							//Extraigo el nombre de la categoria mejor
+							$store_name = implode(', ', $store_name);
+								//si es cerveza
+						if($store_name == 'Cerveza' ){
+								//calculo la nueva cantidad
+							$newqty = intval($product_data['cantidad']) - intval($this->input->post('qty')[$x]);
+							//ACTUALIZO LA CANTIDAD
+							$updatedata = array('cantidad' => $newqty);
+							$this->model_products->updateQty($updatedata, $this->input->post('product')[$x]);
+						}
+				}
+
 	    		$this->db->insert('order_items', $items);
 	    	}
 

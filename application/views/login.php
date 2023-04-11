@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
 </head>
-<body class="hold-transition login-page" style="background-image: url('../assets/images/fondo.JPG'); background-color: #7a3c3b; background-repeat: no-repeat;">
+<body class="hold-transition login-page" style="background-image: url('./assets/images/fondo.JPG'); background-color: #7a3c3b; background-repeat: no-repeat;">
 <div class="login-box">
   <div class="login-logo">
     <a style=" -webkit-text-stroke: 2px black; color: white; " href="#"><b>Sistema de Administración El Gavilán</b></a>

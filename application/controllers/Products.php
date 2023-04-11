@@ -75,7 +75,7 @@ class Products extends Admin_Controller
 				$img,
 				$value['name'],
                 $value['price'],
-				$store_name,
+				$value['cantidad'],
                 $availability,
 				$buttons
 			);

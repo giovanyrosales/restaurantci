@@ -67,15 +67,18 @@ class Orders extends Admin_Controller
 			if(in_array('viewOrder', $this->permission)) {
 				$buttons .= '<a target="__blank" href="'.base_url('orders/printDiv/'.$value['id']).'" class="btn btn-warning"><i class="fa fa-print"></i></a>';
 			}
-
-			if(in_array('updateOrder', $this->permission)) {
-				$buttons .= ' <a href="'.base_url('orders/update/'.$value['id']).'" class="btn btn-info"><i class="fa fa-pencil"></i></a>';
+			if($value['paid_status'] == 1) {
+				$buttons .= '';
+			}else{
+				if(in_array('updateOrder', $this->permission)) {
+					$buttons .= ' <a href="'.base_url('orders/update/'.$value['id']).'" class="btn btn-info"><i class="fa fa-pencil"></i></a>';
+				}
 			}
 
 			if(in_array('deleteOrder', $this->permission)) {
 				$buttons .= ' <button type="button" class="btn btn-danger" onclick="removeFunc('.$value['id'].')" data-toggle="modal" data-target="#removeModal"><i class="fa fa-trash"></i></button>';
 			}
-			if(in_array('deleteOrder', $this->permission)) {
+			if(in_array('updateOrder', $this->permission)) {
 				$buttons .= ' <button type="button" class="btn btn-success" onclick="updateEstado('.$value['id'].')" data-toggle="modal" data-target="#updateOrderModal"><i class="fa fa-file"></i></button>';
 			}
 
