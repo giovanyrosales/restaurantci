@@ -128,6 +128,13 @@ class Model_products extends CI_Model
 
 		
 	}
+	public function getBebidas()
+	{
+			$sql = "SELECT * FROM products WHERE name like '%erveza%'";
+			$query = $this->db->query($sql, array(1));
+			return $query->result_array();
+		
+	}
 
 	public function create($data)
 	{

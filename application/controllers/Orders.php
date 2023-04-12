@@ -74,12 +74,11 @@ class Orders extends Admin_Controller
 					$buttons .= ' <a href="'.base_url('orders/update/'.$value['id']).'" class="btn btn-info"><i class="fa fa-pencil"></i></a>';
 				}
 			}
-
 			if(in_array('deleteOrder', $this->permission)) {
 				$buttons .= ' <button type="button" class="btn btn-danger" onclick="removeFunc('.$value['id'].')" data-toggle="modal" data-target="#removeModal"><i class="fa fa-trash"></i></button>';
 			}
 			if(in_array('updateOrder', $this->permission)) {
-				$buttons .= ' <button type="button" class="btn btn-success" onclick="updateEstado('.$value['id'].')" data-toggle="modal" data-target="#updateOrderModal"><i class="fa fa-file"></i></button>';
+				$buttons .= ' <button type="button" class="btn btn-success" onclick="updateEstado('.$value['id'].')" data-toggle="modal" data-target="#updateOrderModal"><i class="fa fa-bell"></i></button>';
 			}
 
 			if($value['paid_status'] == 1) {

@@ -23,10 +23,12 @@
           <div id="messages"></div>
           
           <?php if(in_array('createUser', $user_permission)): ?>
-            <button class="btn btn-success" data-toggle="modal" data-target="#addModal">Agregar Gasto</button>
+            <button class="btn btn-success" data-toggle="modal" data-target="#addModal">Agregar Gasto</button>&nbsp;&nbsp;
+          <?php endif; ?>
+          <?php if(in_array('createUser', $user_permission)): ?>
+            <button class="btn btn-success" data-toggle="modal" data-target="#addBebidaModal">Agregar Bebida</button>
             <br /> <br />
           <?php endif; ?>
-
 
           <div class="box">
             <div class="box-header">
@@ -94,6 +96,58 @@
         </div>
 
         <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-success">Guardar</button>
+        </div>
+
+      </form>
+
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<?php endif; ?>
+
+<?php if(in_array('createUser', $user_permission)): ?>
+<!-- create bebida modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="addBebidaModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Agregar Bebida</h4>
+      </div>
+
+      <form role="form" action="<?php echo base_url('gastos/createBebida'); ?>" method="post" id="createForm2">
+
+        <div class="modal-body">
+
+          <div class="form-group">
+            <label for="cantidad_gasto">Cantidad (En Cajas)</label>
+            <input type="text" class="form-control" id="cantidad_gasto" name="cantidad_gasto" placeholder="Ingrese cantidad de cajas" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="desc_gasto">Descripción del gasto</label>
+              <select class="form-control select_group product"  onchange="copiarNom();" id="prod_gasto" name="prod_gasto" style="width:80%;" required>
+                      <option value=""></option>
+                      <?php foreach ($products as $k => $v): ?>
+                      <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
+                      <?php endforeach ?>
+              </select>
+          </div>
+
+          <div class="form-group">
+            <label for="fec_gasto">Fecha</label>
+            <input id="fec_gasto" name="fec_gasto" class="form-control" type="date" />
+          </div>
+          <div class="form-group">
+            <label for="mon_gasto">Monto</label>
+            <input id="mon_gasto" name="mon_gasto" class="form-control" type="number" step="any" placeholder="Ingrese el monto del gasto"/>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <input id="nom_gasto" name="nom_gasto" type="hidden" />
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
           <button type="submit" class="btn btn-success">Guardar</button>
         </div>
@@ -178,6 +232,12 @@
 
 
 <script type="text/javascript">
+function copiarNom() {
+  var sel = document.getElementById("prod_gasto");
+  var text= sel.options[sel.selectedIndex].text;
+  document.getElementById("nom_gasto").value = text;
+}
+
 var manageTable;
 var base_url = "<?php echo base_url(); ?>";
 
@@ -218,6 +278,63 @@ $(document).ready(function() {
           // reset the form
           $("#createForm")[0].reset();
           $("#createForm .form-group").removeClass('has-error').removeClass('has-success');
+
+        } else {
+
+          if(response.messages instanceof Object) {
+            $.each(response.messages, function(index, value) {
+              var id = $("#"+index);
+
+              id.closest('.form-group')
+              .removeClass('has-error')
+              .removeClass('has-success')
+              .addClass(value.length > 0 ? 'has-error' : 'has-success');
+              
+              id.after(value);
+
+            });
+          } else {
+            $("#messages").html('<div class="alert alert-warning alert-dismissible" role="alert">'+
+              '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+              '<strong> <span class="glyphicon glyphicon-exclamation-sign"></span> </strong>'+response.messages+
+            '</div>');
+          }
+        }
+      }
+    }); 
+
+    return false;
+  });
+
+   // submit the create from 
+   $("#createForm2").unbind('submit').on('submit', function() {
+    var form = $(this);
+
+    // remove the text-danger
+    $(".text-danger").remove();
+
+    $.ajax({
+      url: form.attr('action'),
+      type: form.attr('method'),
+      data: form.serialize(), // /converting the form data into array and sending it to server
+      dataType: 'json',
+      success:function(response) {
+
+        manageTable.ajax.reload(null, false); 
+
+        if(response.success === true) {
+          $("#messages").html('<div class="alert alert-success alert-dismissible" role="alert">'+
+            '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+            '<strong> <span class="glyphicon glyphicon-ok-sign"></span> </strong>'+response.messages+
+          '</div>');
+
+
+          // hide the modal
+          $("#addBebidaModal").modal('hide');
+
+          // reset the form
+          $("#createForm2")[0].reset();
+          $("#createForm2 .form-group").removeClass('has-error').removeClass('has-success');
 
         } else {
 
@@ -365,6 +482,5 @@ function removeFunc(id)
     });
   }
 }
-
 
 </script>

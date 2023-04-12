@@ -10,6 +10,7 @@ class Gastos extends Admin_Controller
 		
 		$this->data['page_title'] = 'Users';
 		$this->load->model('model_gastos');
+		$this->load->model('model_products');
 	}
 
 	public function index()
@@ -17,6 +18,7 @@ class Gastos extends Admin_Controller
 		if(!in_array('viewUser', $this->permission)) {
             redirect('dashboard', 'refresh');
         }
+		$this->data['products'] = $this->model_products->getBebidas();    
         
 		$this->render_template('gastos/index', $this->data);
 	}
@@ -80,6 +82,52 @@ class Gastos extends Admin_Controller
         	if($create == true) {
         		$response['success'] = true;
         		$response['messages'] = 'Succesfully created';
+        	}
+        	else {
+        		$response['success'] = false;
+        		$response['messages'] = 'Error registrando el gasto';			
+        	}
+        }
+        else {
+        	$response['success'] = false;
+        	foreach ($_POST as $key => $value) {
+        		$response['messages'][$key] = form_error($key);
+        	}
+        }
+
+        echo json_encode($response);
+	}
+
+	public function createBebida()
+	{
+
+		$response = array();
+
+		$this->form_validation->set_rules('prod_gasto', 'Descripcion del Gasto', 'required');
+		$this->form_validation->set_rules('fec_gasto', 'Fecha', 'required');
+		$this->form_validation->set_rules('mon_gasto', 'Monto', 'required');
+
+		$this->form_validation->set_error_delimiters('<p class="text-danger">','</p>');
+
+        if ($this->form_validation->run() == TRUE) {
+        	$data = array(
+        		'desc_gasto' => $this->input->post('nom_gasto'),
+        		'fec_gasto' => $this->input->post('fec_gasto'),	
+				'cantidad' => $this->input->post('cantidad_gasto'),
+				'mon_gasto' => $this->input->post('mon_gasto')
+        	);
+		
+        	$create = $this->model_gastos->create($data);
+        	if($create == true) {
+				$prod = $this->model_products->getProductData($this->input->post('prod_gasto'));
+				$cantactual = intval($prod["cantidad"]);
+				$newcantidad = (intval($this->input->post('cantidad_gasto'))*24) + $cantactual;
+				$updatedata = array('cantidad' => $newcantidad);
+				$this->model_products->updateQty($updatedata, $prod["id"]);
+				//aqui hay que hacer la resta de la cantidad en el producto.
+        		$response['success'] = true;
+        		$response['messages'] = 'Succesfully created';
+
         	}
         	else {
         		$response['success'] = false;
