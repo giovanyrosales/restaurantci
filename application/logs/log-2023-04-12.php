@@ -788,3 +788,424 @@ INFO - 2023-04-12 16:16:53 --> Model Class Initialized
 INFO - 2023-04-12 16:16:53 --> Model Class Initialized
 INFO - 2023-04-12 16:16:53 --> Final output sent to browser
 DEBUG - 2023-04-12 16:16:53 --> Total execution time: 0.0590
+INFO - 2023-04-12 16:36:26 --> Config Class Initialized
+INFO - 2023-04-12 16:36:26 --> Hooks Class Initialized
+DEBUG - 2023-04-12 16:36:26 --> UTF-8 Support Enabled
+INFO - 2023-04-12 16:36:26 --> Utf8 Class Initialized
+INFO - 2023-04-12 16:36:26 --> URI Class Initialized
+INFO - 2023-04-12 16:36:26 --> Router Class Initialized
+INFO - 2023-04-12 16:36:26 --> Output Class Initialized
+INFO - 2023-04-12 16:36:26 --> Security Class Initialized
+DEBUG - 2023-04-12 16:36:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 16:36:26 --> Input Class Initialized
+INFO - 2023-04-12 16:36:26 --> Language Class Initialized
+INFO - 2023-04-12 16:36:26 --> Loader Class Initialized
+INFO - 2023-04-12 16:36:26 --> Helper loaded: url_helper
+INFO - 2023-04-12 16:36:26 --> Helper loaded: form_helper
+INFO - 2023-04-12 16:36:26 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 16:36:26 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 16:36:26 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 16:36:26 --> Form Validation Class Initialized
+INFO - 2023-04-12 16:36:26 --> Controller Class Initialized
+INFO - 2023-04-12 16:36:26 --> Model Class Initialized
+INFO - 2023-04-12 16:36:26 --> Model Class Initialized
+INFO - 2023-04-12 16:36:26 --> Model Class Initialized
+INFO - 2023-04-12 16:36:26 --> Model Class Initialized
+INFO - 2023-04-12 16:36:26 --> Model Class Initialized
+INFO - 2023-04-12 16:36:26 --> Model Class Initialized
+INFO - 2023-04-12 16:36:27 --> Model Class Initialized
+INFO - 2023-04-12 16:36:27 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header.php
+INFO - 2023-04-12 16:36:27 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header_menu.php
+INFO - 2023-04-12 16:36:27 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/side_menubar.php
+INFO - 2023-04-12 16:36:27 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\dashboard.php
+INFO - 2023-04-12 16:36:27 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/footer.php
+INFO - 2023-04-12 16:36:27 --> Final output sent to browser
+DEBUG - 2023-04-12 16:36:27 --> Total execution time: 0.2003
+INFO - 2023-04-12 16:38:36 --> Config Class Initialized
+INFO - 2023-04-12 16:38:36 --> Hooks Class Initialized
+DEBUG - 2023-04-12 16:38:36 --> UTF-8 Support Enabled
+INFO - 2023-04-12 16:38:36 --> Utf8 Class Initialized
+INFO - 2023-04-12 16:38:36 --> URI Class Initialized
+INFO - 2023-04-12 16:38:36 --> Router Class Initialized
+INFO - 2023-04-12 16:38:36 --> Output Class Initialized
+INFO - 2023-04-12 16:38:36 --> Security Class Initialized
+DEBUG - 2023-04-12 16:38:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 16:38:36 --> Input Class Initialized
+INFO - 2023-04-12 16:38:36 --> Language Class Initialized
+INFO - 2023-04-12 16:38:36 --> Loader Class Initialized
+INFO - 2023-04-12 16:38:36 --> Helper loaded: url_helper
+INFO - 2023-04-12 16:38:36 --> Helper loaded: form_helper
+INFO - 2023-04-12 16:38:36 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 16:38:36 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 16:38:36 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 16:38:36 --> Form Validation Class Initialized
+INFO - 2023-04-12 16:38:36 --> Controller Class Initialized
+INFO - 2023-04-12 16:38:36 --> Model Class Initialized
+INFO - 2023-04-12 16:38:36 --> Model Class Initialized
+INFO - 2023-04-12 16:38:36 --> Model Class Initialized
+INFO - 2023-04-12 16:38:36 --> Model Class Initialized
+INFO - 2023-04-12 16:38:36 --> Model Class Initialized
+INFO - 2023-04-12 16:38:36 --> Model Class Initialized
+INFO - 2023-04-12 16:38:36 --> Model Class Initialized
+INFO - 2023-04-12 16:38:36 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header.php
+INFO - 2023-04-12 16:38:36 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header_menu.php
+INFO - 2023-04-12 16:38:36 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/side_menubar.php
+INFO - 2023-04-12 16:38:36 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\dashboard.php
+INFO - 2023-04-12 16:38:36 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/footer.php
+INFO - 2023-04-12 16:38:36 --> Final output sent to browser
+DEBUG - 2023-04-12 16:38:36 --> Total execution time: 0.1064
+INFO - 2023-04-12 16:48:32 --> Config Class Initialized
+INFO - 2023-04-12 16:48:32 --> Hooks Class Initialized
+DEBUG - 2023-04-12 16:48:32 --> UTF-8 Support Enabled
+INFO - 2023-04-12 16:48:32 --> Utf8 Class Initialized
+INFO - 2023-04-12 16:48:32 --> URI Class Initialized
+INFO - 2023-04-12 16:48:32 --> Router Class Initialized
+INFO - 2023-04-12 16:48:32 --> Output Class Initialized
+INFO - 2023-04-12 16:48:32 --> Security Class Initialized
+DEBUG - 2023-04-12 16:48:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 16:48:32 --> Input Class Initialized
+INFO - 2023-04-12 16:48:32 --> Language Class Initialized
+INFO - 2023-04-12 16:48:32 --> Loader Class Initialized
+INFO - 2023-04-12 16:48:32 --> Helper loaded: url_helper
+INFO - 2023-04-12 16:48:32 --> Helper loaded: form_helper
+INFO - 2023-04-12 16:48:32 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 16:48:32 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 16:48:32 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 16:48:32 --> Form Validation Class Initialized
+INFO - 2023-04-12 16:48:32 --> Controller Class Initialized
+INFO - 2023-04-12 16:48:32 --> Model Class Initialized
+INFO - 2023-04-12 16:48:32 --> Model Class Initialized
+INFO - 2023-04-12 16:48:32 --> Model Class Initialized
+INFO - 2023-04-12 16:48:32 --> Model Class Initialized
+INFO - 2023-04-12 16:48:32 --> Model Class Initialized
+INFO - 2023-04-12 16:48:32 --> Model Class Initialized
+INFO - 2023-04-12 16:48:32 --> Model Class Initialized
+INFO - 2023-04-12 16:48:32 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header.php
+INFO - 2023-04-12 16:48:32 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header_menu.php
+INFO - 2023-04-12 16:48:32 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/side_menubar.php
+INFO - 2023-04-12 16:48:32 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\dashboard.php
+INFO - 2023-04-12 16:48:32 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/footer.php
+INFO - 2023-04-12 16:48:32 --> Final output sent to browser
+DEBUG - 2023-04-12 16:48:32 --> Total execution time: 0.1036
+INFO - 2023-04-12 16:49:44 --> Config Class Initialized
+INFO - 2023-04-12 16:49:44 --> Hooks Class Initialized
+DEBUG - 2023-04-12 16:49:44 --> UTF-8 Support Enabled
+INFO - 2023-04-12 16:49:44 --> Utf8 Class Initialized
+INFO - 2023-04-12 16:49:44 --> URI Class Initialized
+INFO - 2023-04-12 16:49:44 --> Router Class Initialized
+INFO - 2023-04-12 16:49:44 --> Output Class Initialized
+INFO - 2023-04-12 16:49:44 --> Security Class Initialized
+DEBUG - 2023-04-12 16:49:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 16:49:44 --> Input Class Initialized
+INFO - 2023-04-12 16:49:44 --> Language Class Initialized
+INFO - 2023-04-12 16:49:44 --> Loader Class Initialized
+INFO - 2023-04-12 16:49:44 --> Helper loaded: url_helper
+INFO - 2023-04-12 16:49:44 --> Helper loaded: form_helper
+INFO - 2023-04-12 16:49:44 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 16:49:44 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 16:49:44 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 16:49:44 --> Form Validation Class Initialized
+INFO - 2023-04-12 16:49:44 --> Controller Class Initialized
+INFO - 2023-04-12 16:49:44 --> Model Class Initialized
+INFO - 2023-04-12 16:49:44 --> Model Class Initialized
+INFO - 2023-04-12 16:49:44 --> Model Class Initialized
+INFO - 2023-04-12 16:49:44 --> Model Class Initialized
+INFO - 2023-04-12 16:49:44 --> Model Class Initialized
+INFO - 2023-04-12 16:49:44 --> Model Class Initialized
+INFO - 2023-04-12 16:49:44 --> Model Class Initialized
+INFO - 2023-04-12 16:49:44 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header.php
+INFO - 2023-04-12 16:49:44 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header_menu.php
+INFO - 2023-04-12 16:49:44 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/side_menubar.php
+INFO - 2023-04-12 16:49:44 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\dashboard.php
+INFO - 2023-04-12 16:49:44 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/footer.php
+INFO - 2023-04-12 16:49:44 --> Final output sent to browser
+DEBUG - 2023-04-12 16:49:44 --> Total execution time: 0.2057
+INFO - 2023-04-12 16:49:46 --> Config Class Initialized
+INFO - 2023-04-12 16:49:46 --> Hooks Class Initialized
+DEBUG - 2023-04-12 16:49:46 --> UTF-8 Support Enabled
+INFO - 2023-04-12 16:49:46 --> Utf8 Class Initialized
+INFO - 2023-04-12 16:49:46 --> URI Class Initialized
+INFO - 2023-04-12 16:49:46 --> Router Class Initialized
+INFO - 2023-04-12 16:49:46 --> Output Class Initialized
+INFO - 2023-04-12 16:49:46 --> Security Class Initialized
+DEBUG - 2023-04-12 16:49:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 16:49:46 --> Input Class Initialized
+INFO - 2023-04-12 16:49:46 --> Language Class Initialized
+INFO - 2023-04-12 16:49:46 --> Loader Class Initialized
+INFO - 2023-04-12 16:49:46 --> Helper loaded: url_helper
+INFO - 2023-04-12 16:49:46 --> Helper loaded: form_helper
+INFO - 2023-04-12 16:49:46 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 16:49:46 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 16:49:46 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 16:49:46 --> Form Validation Class Initialized
+INFO - 2023-04-12 16:49:46 --> Controller Class Initialized
+INFO - 2023-04-12 16:49:46 --> Model Class Initialized
+INFO - 2023-04-12 16:49:46 --> Model Class Initialized
+INFO - 2023-04-12 16:49:46 --> Model Class Initialized
+INFO - 2023-04-12 16:49:46 --> Model Class Initialized
+INFO - 2023-04-12 16:49:46 --> Model Class Initialized
+INFO - 2023-04-12 16:49:46 --> Model Class Initialized
+INFO - 2023-04-12 16:49:46 --> Model Class Initialized
+INFO - 2023-04-12 16:49:46 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header.php
+INFO - 2023-04-12 16:49:46 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header_menu.php
+INFO - 2023-04-12 16:49:46 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/side_menubar.php
+INFO - 2023-04-12 16:49:46 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\dashboard.php
+INFO - 2023-04-12 16:49:46 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/footer.php
+INFO - 2023-04-12 16:49:46 --> Final output sent to browser
+DEBUG - 2023-04-12 16:49:46 --> Total execution time: 0.0729
+INFO - 2023-04-12 16:50:36 --> Config Class Initialized
+INFO - 2023-04-12 16:50:36 --> Hooks Class Initialized
+DEBUG - 2023-04-12 16:50:36 --> UTF-8 Support Enabled
+INFO - 2023-04-12 16:50:36 --> Utf8 Class Initialized
+INFO - 2023-04-12 16:50:36 --> URI Class Initialized
+INFO - 2023-04-12 16:50:36 --> Router Class Initialized
+INFO - 2023-04-12 16:50:36 --> Output Class Initialized
+INFO - 2023-04-12 16:50:36 --> Security Class Initialized
+DEBUG - 2023-04-12 16:50:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 16:50:36 --> Input Class Initialized
+INFO - 2023-04-12 16:50:36 --> Language Class Initialized
+INFO - 2023-04-12 16:50:36 --> Loader Class Initialized
+INFO - 2023-04-12 16:50:36 --> Helper loaded: url_helper
+INFO - 2023-04-12 16:50:36 --> Helper loaded: form_helper
+INFO - 2023-04-12 16:50:36 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 16:50:36 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 16:50:36 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 16:50:36 --> Form Validation Class Initialized
+INFO - 2023-04-12 16:50:36 --> Controller Class Initialized
+INFO - 2023-04-12 16:50:36 --> Model Class Initialized
+INFO - 2023-04-12 16:50:36 --> Model Class Initialized
+INFO - 2023-04-12 16:50:36 --> Model Class Initialized
+INFO - 2023-04-12 16:50:36 --> Model Class Initialized
+INFO - 2023-04-12 16:50:36 --> Model Class Initialized
+INFO - 2023-04-12 16:50:36 --> Model Class Initialized
+INFO - 2023-04-12 16:50:36 --> Model Class Initialized
+INFO - 2023-04-12 16:50:36 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header.php
+INFO - 2023-04-12 16:50:36 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header_menu.php
+INFO - 2023-04-12 16:50:36 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/side_menubar.php
+INFO - 2023-04-12 16:50:36 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\dashboard.php
+INFO - 2023-04-12 16:50:36 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/footer.php
+INFO - 2023-04-12 16:50:36 --> Final output sent to browser
+DEBUG - 2023-04-12 16:50:36 --> Total execution time: 0.0702
+INFO - 2023-04-12 16:50:40 --> Config Class Initialized
+INFO - 2023-04-12 16:50:40 --> Hooks Class Initialized
+DEBUG - 2023-04-12 16:50:40 --> UTF-8 Support Enabled
+INFO - 2023-04-12 16:50:40 --> Utf8 Class Initialized
+INFO - 2023-04-12 16:50:40 --> URI Class Initialized
+DEBUG - 2023-04-12 16:50:40 --> No URI present. Default controller set.
+INFO - 2023-04-12 16:50:40 --> Router Class Initialized
+INFO - 2023-04-12 16:50:40 --> Output Class Initialized
+INFO - 2023-04-12 16:50:40 --> Security Class Initialized
+DEBUG - 2023-04-12 16:50:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 16:50:40 --> Input Class Initialized
+INFO - 2023-04-12 16:50:40 --> Language Class Initialized
+INFO - 2023-04-12 16:50:40 --> Loader Class Initialized
+INFO - 2023-04-12 16:50:40 --> Helper loaded: url_helper
+INFO - 2023-04-12 16:50:40 --> Helper loaded: form_helper
+INFO - 2023-04-12 16:50:40 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 16:50:40 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 16:50:40 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 16:50:40 --> Form Validation Class Initialized
+INFO - 2023-04-12 16:50:40 --> Controller Class Initialized
+INFO - 2023-04-12 16:50:40 --> Model Class Initialized
+INFO - 2023-04-12 16:50:40 --> Model Class Initialized
+INFO - 2023-04-12 16:52:10 --> Config Class Initialized
+INFO - 2023-04-12 16:52:10 --> Hooks Class Initialized
+DEBUG - 2023-04-12 16:52:10 --> UTF-8 Support Enabled
+INFO - 2023-04-12 16:52:10 --> Utf8 Class Initialized
+INFO - 2023-04-12 16:52:10 --> URI Class Initialized
+DEBUG - 2023-04-12 16:52:10 --> No URI present. Default controller set.
+INFO - 2023-04-12 16:52:10 --> Router Class Initialized
+INFO - 2023-04-12 16:52:10 --> Output Class Initialized
+INFO - 2023-04-12 16:52:10 --> Security Class Initialized
+DEBUG - 2023-04-12 16:52:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 16:52:10 --> Input Class Initialized
+INFO - 2023-04-12 16:52:10 --> Language Class Initialized
+INFO - 2023-04-12 16:52:10 --> Loader Class Initialized
+INFO - 2023-04-12 16:52:10 --> Helper loaded: url_helper
+INFO - 2023-04-12 16:52:10 --> Helper loaded: form_helper
+INFO - 2023-04-12 16:52:10 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 16:52:10 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 16:52:10 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 16:52:10 --> Form Validation Class Initialized
+INFO - 2023-04-12 16:52:10 --> Controller Class Initialized
+INFO - 2023-04-12 16:52:10 --> Model Class Initialized
+INFO - 2023-04-12 16:52:10 --> Model Class Initialized
+INFO - 2023-04-12 16:52:11 --> Config Class Initialized
+INFO - 2023-04-12 16:52:11 --> Hooks Class Initialized
+DEBUG - 2023-04-12 16:52:11 --> UTF-8 Support Enabled
+INFO - 2023-04-12 16:52:11 --> Utf8 Class Initialized
+INFO - 2023-04-12 16:52:11 --> URI Class Initialized
+INFO - 2023-04-12 16:52:11 --> Router Class Initialized
+INFO - 2023-04-12 16:52:11 --> Output Class Initialized
+INFO - 2023-04-12 16:52:11 --> Security Class Initialized
+DEBUG - 2023-04-12 16:52:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 16:52:11 --> Input Class Initialized
+INFO - 2023-04-12 16:52:11 --> Language Class Initialized
+INFO - 2023-04-12 16:52:11 --> Loader Class Initialized
+INFO - 2023-04-12 16:52:11 --> Helper loaded: url_helper
+INFO - 2023-04-12 16:52:11 --> Helper loaded: form_helper
+INFO - 2023-04-12 16:52:11 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 16:52:11 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 16:52:11 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 16:52:11 --> Form Validation Class Initialized
+INFO - 2023-04-12 16:52:11 --> Controller Class Initialized
+INFO - 2023-04-12 16:52:11 --> Model Class Initialized
+INFO - 2023-04-12 16:52:11 --> Model Class Initialized
+INFO - 2023-04-12 16:52:11 --> Model Class Initialized
+INFO - 2023-04-12 16:52:11 --> Model Class Initialized
+INFO - 2023-04-12 16:52:11 --> Model Class Initialized
+INFO - 2023-04-12 16:52:11 --> Model Class Initialized
+INFO - 2023-04-12 16:52:11 --> Model Class Initialized
+INFO - 2023-04-12 16:52:11 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header.php
+INFO - 2023-04-12 16:52:11 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header_menu.php
+INFO - 2023-04-12 16:52:11 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/side_menubar.php
+INFO - 2023-04-12 16:52:11 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\dashboard.php
+INFO - 2023-04-12 16:52:11 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/footer.php
+INFO - 2023-04-12 16:52:11 --> Final output sent to browser
+DEBUG - 2023-04-12 16:52:11 --> Total execution time: 0.0698
+INFO - 2023-04-12 16:52:13 --> Config Class Initialized
+INFO - 2023-04-12 16:52:13 --> Hooks Class Initialized
+DEBUG - 2023-04-12 16:52:13 --> UTF-8 Support Enabled
+INFO - 2023-04-12 16:52:13 --> Utf8 Class Initialized
+INFO - 2023-04-12 16:52:13 --> URI Class Initialized
+INFO - 2023-04-12 16:52:13 --> Router Class Initialized
+INFO - 2023-04-12 16:52:13 --> Output Class Initialized
+INFO - 2023-04-12 16:52:13 --> Security Class Initialized
+DEBUG - 2023-04-12 16:52:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 16:52:13 --> Input Class Initialized
+INFO - 2023-04-12 16:52:13 --> Language Class Initialized
+INFO - 2023-04-12 16:52:13 --> Loader Class Initialized
+INFO - 2023-04-12 16:52:13 --> Helper loaded: url_helper
+INFO - 2023-04-12 16:52:13 --> Helper loaded: form_helper
+INFO - 2023-04-12 16:52:13 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 16:52:13 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 16:52:13 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 16:52:13 --> Form Validation Class Initialized
+INFO - 2023-04-12 16:52:13 --> Controller Class Initialized
+INFO - 2023-04-12 16:52:13 --> Model Class Initialized
+INFO - 2023-04-12 16:52:13 --> Model Class Initialized
+INFO - 2023-04-12 16:52:13 --> Model Class Initialized
+INFO - 2023-04-12 16:52:13 --> Model Class Initialized
+INFO - 2023-04-12 16:52:13 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header.php
+INFO - 2023-04-12 16:52:13 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/header_menu.php
+INFO - 2023-04-12 16:52:13 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/side_menubar.php
+INFO - 2023-04-12 16:52:13 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\gastos/index.php
+INFO - 2023-04-12 16:52:13 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\templates/footer.php
+INFO - 2023-04-12 16:52:13 --> Final output sent to browser
+DEBUG - 2023-04-12 16:52:13 --> Total execution time: 0.0651
+INFO - 2023-04-12 16:52:13 --> Config Class Initialized
+INFO - 2023-04-12 16:52:13 --> Hooks Class Initialized
+DEBUG - 2023-04-12 16:52:13 --> UTF-8 Support Enabled
+INFO - 2023-04-12 16:52:13 --> Utf8 Class Initialized
+INFO - 2023-04-12 16:52:13 --> URI Class Initialized
+INFO - 2023-04-12 16:52:13 --> Router Class Initialized
+INFO - 2023-04-12 16:52:13 --> Output Class Initialized
+INFO - 2023-04-12 16:52:13 --> Security Class Initialized
+DEBUG - 2023-04-12 16:52:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 16:52:13 --> Input Class Initialized
+INFO - 2023-04-12 16:52:13 --> Language Class Initialized
+INFO - 2023-04-12 16:52:13 --> Loader Class Initialized
+INFO - 2023-04-12 16:52:13 --> Helper loaded: url_helper
+INFO - 2023-04-12 16:52:13 --> Helper loaded: form_helper
+INFO - 2023-04-12 16:52:13 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 16:52:13 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 16:52:13 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 16:52:13 --> Form Validation Class Initialized
+INFO - 2023-04-12 16:52:13 --> Controller Class Initialized
+INFO - 2023-04-12 16:52:13 --> Model Class Initialized
+INFO - 2023-04-12 16:52:13 --> Model Class Initialized
+INFO - 2023-04-12 16:52:13 --> Model Class Initialized
+INFO - 2023-04-12 16:52:13 --> Model Class Initialized
+INFO - 2023-04-12 16:52:13 --> Final output sent to browser
+DEBUG - 2023-04-12 16:52:13 --> Total execution time: 0.0751
+INFO - 2023-04-12 18:46:38 --> Config Class Initialized
+INFO - 2023-04-12 18:46:38 --> Hooks Class Initialized
+DEBUG - 2023-04-12 18:46:38 --> UTF-8 Support Enabled
+INFO - 2023-04-12 18:46:38 --> Utf8 Class Initialized
+INFO - 2023-04-12 18:46:38 --> URI Class Initialized
+INFO - 2023-04-12 18:46:38 --> Router Class Initialized
+INFO - 2023-04-12 18:46:38 --> Output Class Initialized
+INFO - 2023-04-12 18:46:38 --> Security Class Initialized
+DEBUG - 2023-04-12 18:46:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 18:46:38 --> Input Class Initialized
+INFO - 2023-04-12 18:46:38 --> Language Class Initialized
+INFO - 2023-04-12 18:46:38 --> Loader Class Initialized
+INFO - 2023-04-12 18:46:38 --> Helper loaded: url_helper
+INFO - 2023-04-12 18:46:38 --> Helper loaded: form_helper
+INFO - 2023-04-12 18:46:38 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 18:46:38 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 18:46:38 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 18:46:38 --> Form Validation Class Initialized
+INFO - 2023-04-12 18:46:38 --> Controller Class Initialized
+INFO - 2023-04-12 18:46:38 --> Model Class Initialized
+INFO - 2023-04-12 18:46:38 --> Model Class Initialized
+INFO - 2023-04-12 18:46:38 --> Config Class Initialized
+INFO - 2023-04-12 18:46:38 --> Hooks Class Initialized
+DEBUG - 2023-04-12 18:46:38 --> UTF-8 Support Enabled
+INFO - 2023-04-12 18:46:38 --> Utf8 Class Initialized
+INFO - 2023-04-12 18:46:38 --> URI Class Initialized
+INFO - 2023-04-12 18:46:38 --> Router Class Initialized
+INFO - 2023-04-12 18:46:38 --> Output Class Initialized
+INFO - 2023-04-12 18:46:38 --> Security Class Initialized
+DEBUG - 2023-04-12 18:46:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 18:46:38 --> Input Class Initialized
+INFO - 2023-04-12 18:46:38 --> Language Class Initialized
+INFO - 2023-04-12 18:46:38 --> Loader Class Initialized
+INFO - 2023-04-12 18:46:38 --> Helper loaded: url_helper
+INFO - 2023-04-12 18:46:38 --> Helper loaded: form_helper
+INFO - 2023-04-12 18:46:38 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 18:46:38 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 18:46:38 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 18:46:38 --> Form Validation Class Initialized
+INFO - 2023-04-12 18:46:38 --> Controller Class Initialized
+INFO - 2023-04-12 18:46:38 --> Model Class Initialized
+INFO - 2023-04-12 18:46:38 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\login.php
+INFO - 2023-04-12 18:46:38 --> Final output sent to browser
+DEBUG - 2023-04-12 18:46:38 --> Total execution time: 0.1074
+INFO - 2023-04-12 18:46:38 --> Config Class Initialized
+INFO - 2023-04-12 18:46:38 --> Hooks Class Initialized
+DEBUG - 2023-04-12 18:46:38 --> UTF-8 Support Enabled
+INFO - 2023-04-12 18:46:38 --> Utf8 Class Initialized
+INFO - 2023-04-12 18:46:38 --> URI Class Initialized
+INFO - 2023-04-12 18:46:38 --> Router Class Initialized
+INFO - 2023-04-12 18:46:38 --> Output Class Initialized
+INFO - 2023-04-12 18:46:38 --> Security Class Initialized
+DEBUG - 2023-04-12 18:46:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 18:46:38 --> Input Class Initialized
+INFO - 2023-04-12 18:46:38 --> Language Class Initialized
+ERROR - 2023-04-12 18:46:38 --> 404 Page Not Found: Auth/assets
+INFO - 2023-04-12 19:30:39 --> Config Class Initialized
+INFO - 2023-04-12 19:30:39 --> Hooks Class Initialized
+DEBUG - 2023-04-12 19:30:39 --> UTF-8 Support Enabled
+INFO - 2023-04-12 19:30:39 --> Utf8 Class Initialized
+INFO - 2023-04-12 19:30:39 --> URI Class Initialized
+INFO - 2023-04-12 19:30:39 --> Router Class Initialized
+INFO - 2023-04-12 19:30:39 --> Output Class Initialized
+INFO - 2023-04-12 19:30:39 --> Security Class Initialized
+DEBUG - 2023-04-12 19:30:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 19:30:39 --> Input Class Initialized
+INFO - 2023-04-12 19:30:39 --> Language Class Initialized
+INFO - 2023-04-12 19:30:39 --> Loader Class Initialized
+INFO - 2023-04-12 19:30:39 --> Helper loaded: url_helper
+INFO - 2023-04-12 19:30:39 --> Helper loaded: form_helper
+INFO - 2023-04-12 19:30:39 --> Database Driver Class Initialized
+DEBUG - 2023-04-12 19:30:39 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2023-04-12 19:30:39 --> Session: Class initialized using 'files' driver.
+INFO - 2023-04-12 19:30:39 --> Form Validation Class Initialized
+INFO - 2023-04-12 19:30:39 --> Controller Class Initialized
+INFO - 2023-04-12 19:30:39 --> Model Class Initialized
+INFO - 2023-04-12 19:30:39 --> File loaded: C:\xampp\htdocs\restaurantci\application\views\login.php
+INFO - 2023-04-12 19:30:39 --> Final output sent to browser
+DEBUG - 2023-04-12 19:30:39 --> Total execution time: 0.0401
+INFO - 2023-04-12 19:30:39 --> Config Class Initialized
+INFO - 2023-04-12 19:30:39 --> Hooks Class Initialized
+DEBUG - 2023-04-12 19:30:39 --> UTF-8 Support Enabled
+INFO - 2023-04-12 19:30:39 --> Utf8 Class Initialized
+INFO - 2023-04-12 19:30:39 --> URI Class Initialized
+INFO - 2023-04-12 19:30:39 --> Router Class Initialized
+INFO - 2023-04-12 19:30:39 --> Output Class Initialized
+INFO - 2023-04-12 19:30:39 --> Security Class Initialized
+DEBUG - 2023-04-12 19:30:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2023-04-12 19:30:39 --> Input Class Initialized
+INFO - 2023-04-12 19:30:39 --> Language Class Initialized
+ERROR - 2023-04-12 19:30:39 --> 404 Page Not Found: Auth/assets
