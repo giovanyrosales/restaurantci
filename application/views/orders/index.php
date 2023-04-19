@@ -48,12 +48,12 @@
             <table id="manageTable" class="table table-bordered table-hover table-striped">
               <thead>
               <tr>
-                <th>Ticket No.</th>
                 <th>Mesa</th>
-                <th>Fecha</th>
+                <th>Notas</th>
                 <th>Productos</th>
                 <th>Total</th>
                 <th>Estado de Pago</th>
+                <th>Estado de Orden</th>
                 <?php if(in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
                   <th>Opciones</th>
                 <?php endif; ?>
@@ -97,10 +97,38 @@
       </form>
 
 
+
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <?php endif; ?>
+
+
+<!-- update order modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="updateOrderModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Cambiar Estado Orden</h4>
+      </div>
+
+      <form role="form" action="<?php echo base_url('orders/updateorderestatus') ?>" method="post" id="updateOrder">
+        <div class="modal-body">
+          <p>Esta lista la Orden?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-success">Si</button>
+        </div>
+      </form>
+      
+
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
 
 
@@ -149,6 +177,47 @@ function removeFunc(id)
 
             // hide the modal
             $("#removeModal").modal('hide');
+
+          } else {
+
+            $("#messages").html('<div class="alert alert-warning alert-dismissible" role="alert">'+
+              '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+              '<strong> <span class="glyphicon glyphicon-exclamation-sign"></span> </strong>'+response.messages+
+            '</div>'); 
+          }
+        }
+      }); 
+
+      return false;
+    });
+  }
+}
+
+// update estado functions 
+function updateEstado(id)
+{
+  if(id) {
+    $("#updateOrder").on('submit', function() {
+
+      var form = $(this);
+
+      $.ajax({
+        url: form.attr('action'),
+        type: form.attr('method'),
+        data: { order_id:id }, 
+        dataType: 'json',
+        success:function(response) {
+
+          manageTable.ajax.reload(null, false); 
+
+          if(response.success === true) {
+            $("#messages").html('<div class="alert alert-success alert-dismissible" role="alert">'+
+              '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+              '<strong> <span class="glyphicon glyphicon-ok-sign"></span> </strong>'+response.messages+
+            '</div>');
+
+            // hide the modal
+            $("#updateOrderModal").modal('hide');
 
           } else {
 

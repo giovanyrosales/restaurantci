@@ -55,7 +55,7 @@
                 <th>Imagen</th>
                 <th>Nombre Producto</th>
                 <th>Precio</th>
-                <th>Sucursal</th>
+                <th>Cantidad</th>
                 <th>Estado</th>
                 <?php if(in_array('updateProduct', $user_permission) || in_array('deleteProduct', $user_permission)): ?>
                   <th>Opciones</th>

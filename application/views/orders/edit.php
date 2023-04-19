@@ -69,7 +69,12 @@
                       </select>
                     </div>
                   </div>
-
+                  <div class="form-group">
+                    <label for="notas" class="col-sm-5 control-label" style="text-align:left;">Notas</label>
+                    <div class="col-sm-7">
+                      <textarea class="form-control" id="notas" name="notas" rows="2" cols="40"><?php  echo trim($order_data['order']['notas']) ?></textarea>
+                    </div>
+                  </div>
                   
                 </div>
                 

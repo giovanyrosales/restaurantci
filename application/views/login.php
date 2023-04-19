@@ -26,14 +26,14 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  <!-- Google Font -->
+  <!-- Google Font  background-color: #7a3c3b-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
 </head>
-<body class="hold-transition login-page" style="background-color: #7a3c3b">
+<body class="hold-transition login-page" style="background-image: url('./assets/images/fondo.JPG'); background-color: #7a3c3b; background-repeat: no-repeat;">
 <div class="login-box">
   <div class="login-logo">
-    <a style="color:white;" href="#"><b>Sistema de Administración El Gavilán</b></a>
+    <a style=" -webkit-text-stroke: 2px black; color: white; " href="#"><b>Sistema de Administración El Gavilán</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">

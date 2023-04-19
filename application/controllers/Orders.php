@@ -67,13 +67,18 @@ class Orders extends Admin_Controller
 			if(in_array('viewOrder', $this->permission)) {
 				$buttons .= '<a target="__blank" href="'.base_url('orders/printDiv/'.$value['id']).'" class="btn btn-warning"><i class="fa fa-print"></i></a>';
 			}
-
-			if(in_array('updateOrder', $this->permission)) {
-				$buttons .= ' <a href="'.base_url('orders/update/'.$value['id']).'" class="btn btn-info"><i class="fa fa-pencil"></i></a>';
+			if($value['paid_status'] == 1) {
+				$buttons .= '';
+			}else{
+				if(in_array('updateOrder', $this->permission)) {
+					$buttons .= ' <a href="'.base_url('orders/update/'.$value['id']).'" class="btn btn-info"><i class="fa fa-pencil"></i></a>';
+				}
 			}
-
 			if(in_array('deleteOrder', $this->permission)) {
 				$buttons .= ' <button type="button" class="btn btn-danger" onclick="removeFunc('.$value['id'].')" data-toggle="modal" data-target="#removeModal"><i class="fa fa-trash"></i></button>';
+			}
+			if(in_array('updateOrder', $this->permission)) {
+				$buttons .= ' <button type="button" class="btn btn-success" onclick="updateEstado('.$value['id'].')" data-toggle="modal" data-target="#updateOrderModal"><i class="fa fa-bell"></i></button>';
 			}
 
 			if($value['paid_status'] == 1) {
@@ -82,14 +87,21 @@ class Orders extends Admin_Controller
 			else {
 				$paid_status = '<span class="label label-danger">Sin Pagar</span>';
 			}
+			if($value['estado'] == 1) {
+				$estado = '<span class="label label-warning">Pendiente</span>';	
+			}
+			else {
+				$estado = '<span class="label label-success">Listo</span>';
+			}
 
 			$result['data'][$key] = array(
-				$value['bill_no'],
+				//$value['bill_no'],
 				$table_data['table_name'],
-				$date_time,
+				$value['notas'],
 				$count_total_item,
 				$value['net_amount'],
 				$paid_status,
+				$estado,
 				$buttons
 			);
 		} // /foreach
@@ -238,7 +250,34 @@ class Orders extends Admin_Controller
             $this->render_template('orders/edit', $this->data);
         }
 	}
+	/*
+	* It removes the data from the database
+	* and it returns the response into the json format
+	*/
+	public function updateorderestatus()
+	{
 
+		$order_id = $this->input->post('order_id');
+
+        $response = array();
+        if($order_id) {
+            $updateestado = $this->model_orders->updateEstado($order_id);
+            if($updateestado == true) {
+                $response['success'] = true;
+                $response['messages'] = "Estado Actualizado Exitosamente"; 
+            }
+            else {
+                $response['success'] = false;
+                $response['messages'] = "Error al cambiar estado";
+            }
+        }
+        else {
+            $response['success'] = false;
+            $response['messages'] = "Refresca e intenta de nuevo!!";
+        }
+
+        echo json_encode($response); 
+	}
 	/*
 	* It removes the data from the database
 	* and it returns the response into the json format

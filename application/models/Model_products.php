@@ -40,6 +40,22 @@ class Model_products extends CI_Model
 			return $data;		
 		}
 	}
+	/* get the product data */
+	public function getProductDataAll($id)
+	{
+			$sql = "SELECT * FROM products where id = ?";
+			$query = $this->db->query($sql, array($id));
+			return $query->row_array();
+		
+	}
+	public function updateQty($data, $id)
+	{
+		if($data && $id) {
+			$this->db->where('id', $id);
+			$update = $this->db->update('products', $data);
+			return ($update == true) ? true : false;
+		}
+	}
 
 	/* get the product data */
 	public function getProductDataByCat($cat_id = null)
@@ -110,6 +126,13 @@ class Model_products extends CI_Model
 			return $data;			
 		}
 
+		
+	}
+	public function getBebidas()
+	{
+			$sql = "SELECT * FROM products WHERE name like '%erveza%'";
+			$query = $this->db->query($sql, array(1));
+			return $query->result_array();
 		
 	}
 
