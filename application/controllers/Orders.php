@@ -339,6 +339,7 @@ class Orders extends Admin_Controller
 			      <div class="col-xs-12">
 			        <h2 class="page-header">
 			          '.$company_info['company_name'].'
+					  <small >Tel. +503 7563-3936</small>
 			          <small >Fecha: '.$order_date.'</small>
 			        </h2>
 			      </div>
@@ -422,7 +423,9 @@ class Orders extends Admin_Controller
 			              <td>'.$paid_status.'</td>
 			            </tr>
 			          </table>
-					  <br><br><br><br><br><br>
+					  <br><br>
+					  <center>Muchas gracias por su visita!</center>
+					  <br><br><br><br>
 			        </div>
 			      </div>
 			      <!-- /.col -->
