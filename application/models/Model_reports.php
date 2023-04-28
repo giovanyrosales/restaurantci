@@ -131,4 +131,20 @@ class Model_reports extends CI_Model
 			return $final_data;
 		}
 	}
+
+		/* ventas en un periodo */
+		public function getOrderByDate($fecha1, $fecha2)
+		{
+			$sql = "SELECT o.bill_no, oi.qty, oi.product_id, sum(oi.amount) as total FROM orders o JOIN order_items oi on o.id = oi.order_id where date_time BETWEEN ".$fecha1." and ".$fecha2." GROUP BY oi.product_id";
+			$query = $this->db->query($sql);
+			return $query->result_array();
+			
+		}
+		/* gastos en un periodo */
+		public function getGastosByDate($fecha1, $fecha2)
+		{
+			$sql = "SELECT * FROM gastos WHERE fec_gasto between '".$fecha1."' and '".$fecha2."'";
+			$query = $this->db->query($sql);
+			return $query->result_array();
+		}
 }
