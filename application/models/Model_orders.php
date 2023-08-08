@@ -45,6 +45,17 @@ class Model_orders extends CI_Model
 		$query = $this->db->query($sql, array($order_id));
 		return $query->result_array();
 	}
+	// get the orders item data
+	public function getOrdersItemDataNotCompleted($order_id = null)
+	{
+		if(!$order_id) {
+			return false;
+		}
+
+		$sql = "SELECT * FROM order_items WHERE order_id = ? and completo = '0'";
+		$query = $this->db->query($sql, array($order_id));
+		return $query->result_array();
+	}
 
 	public function create()
 	{
@@ -69,7 +80,7 @@ class Model_orders extends CI_Model
     		'paid_status' => 2,
     		'user_id' => $user_id,
     		'table_id' => $this->input->post('table_name'),
-    		'store_id' => $store_id,
+    		'store_id' => $store_id
     	);
 
 		$insert = $this->db->insert('orders', $data);
@@ -82,7 +93,7 @@ class Model_orders extends CI_Model
     			'product_id' => $this->input->post('product')[$x],
     			'qty' => $this->input->post('qty')[$x],
     			'rate' => $this->input->post('rate_value')[$x],
-    			'amount' => $this->input->post('amount_value')[$x],
+    			'amount' => $this->input->post('amount_value')[$x]
     		);
 
     		$this->db->insert('order_items', $items);
@@ -152,6 +163,7 @@ class Model_orders extends CI_Model
 	    			'qty' => $this->input->post('qty')[$x],
 	    			'rate' => $this->input->post('rate_value')[$x],
 	    			'amount' => $this->input->post('amount_value')[$x],
+					'completo' => $this->input->post('completo_value')[$x],
 	    		);
 				//Restar cantidad de los productos si es cerveza
 				if($data['paid_status'] == 1){
@@ -201,6 +213,10 @@ class Model_orders extends CI_Model
 
 			$this->db->where('id', $id);
 			$update = $this->db->update('orders', $data);
+			$this->db->where('order_id', $id);
+			$update = $this->db->update('order_items', array('completo' => 1));
+
+			
 
 			return true;
 		}

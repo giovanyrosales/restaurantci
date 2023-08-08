@@ -49,6 +49,7 @@ class Orders extends Admin_Controller
 		$result = array('data' => array());
 
 		$data = $this->model_orders->getOrdersData();
+		
 
 		foreach ($data as $key => $value) {
 
@@ -65,7 +66,10 @@ class Orders extends Admin_Controller
 			$buttons = '';
 
 			if(in_array('viewOrder', $this->permission)) {
-				$buttons .= '<a target="__blank" href="'.base_url('orders/printDiv/'.$value['id']).'" class="btn btn-warning"><i class="fa fa-print"></i></a>';
+				$buttons .= ' <a target="__blank" href="'.base_url('orders/printDiv/'.$value['id']).'" class="btn btn-success"><i class="fa fa-credit-card"></i></a>';
+			}
+			if(in_array('viewOrder', $this->permission)) {
+				$buttons .= ' <a target="__blank" href="'.base_url('orders/printDivCoc/'.$value['id']).'" class="btn btn-warning"><i class="fa fa-print"></i></a>';
 			}
 			if($value['paid_status'] == 1) {
 				$buttons .= '';
@@ -87,7 +91,9 @@ class Orders extends Admin_Controller
 			else {
 				$paid_status = '<span class="label label-danger">Sin Pagar</span>';
 			}
-			if($value['estado'] == 1) {
+			//if($value['estado'] == 1) {
+			$pendiente  = $this->model_orders->getOrdersItemDataNotCompleted($value['id']);
+			if(count($pendiente) != 0) {
 				$estado = '<span class="label label-warning">Pendiente</span>';	
 			}
 			else {
@@ -100,7 +106,7 @@ class Orders extends Admin_Controller
 				$value['notas'],
 				$count_total_item,
 				$value['net_amount'],
-				$paid_status,
+				//$paid_status,
 				$estado,
 				$buttons
 			);
@@ -328,6 +334,176 @@ class Orders extends Admin_Controller
 
 			$order_date = date('d/m/Y', $order_data['date_time']);
 			$paid_status = ($order_data['paid_status'] == 1) ? "Pagado" : "Sin Pagar";
+			$user_data = $this->model_users->getUserData($order_data['user_id']);
+			$table_data = $this->model_tables->getTableData($order_data['table_id']);
+
+			if ($order_data['discount'] > 0) {
+				$discount = $this->currency_code . ' ' .$order_data['discount'];
+			}
+			else {
+				$discount = '0';
+			}
+
+
+			$html = '<!-- Main content -->
+			<!DOCTYPE html>
+			<html>
+			<head>
+			  <meta charset="utf-8">
+			  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			  <title>Recibo</title>
+			  <!-- Tell the browser to be responsive to screen width -->
+			  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+			  <!-- Bootstrap 3.3.7 -->
+			  <link rel="stylesheet" href="'.base_url('assets/bower_components/bootstrap/dist/css/bootstrap.min.css').'">
+			  <!-- Font Awesome -->
+			  <link rel="stylesheet" href="'.base_url('assets/bower_components/font-awesome/css/font-awesome.min.css').'">
+			  <link rel="stylesheet" href="'.base_url('assets/dist/css/AdminLTE.min.css').'">
+			  <style>
+			  @charset "utf-8";
+					/* CSS Document */
+
+					@media print {
+					
+					@page {
+						size: 3in 8in;
+					
+						}
+					p, body , table {
+						font-size: 7pt;
+						}
+					}
+			  </style>
+			</head>
+			<body onload="window.print();">
+			
+			<div class="wrapper">
+			  <section class="invoice">
+			    <!-- title row -->
+			    <div class="row">
+			      <div class="col-xs-12">
+			        <center><h2 class="page-header">
+			          '.$company_info['company_name'].'
+			          <small >Fecha: '.$order_date.'</small>
+					  <small >Hora: '.date("H:i:s").'</small>
+			        </h2></center>
+			      </div>
+			      <!-- /.col -->
+			    </div>
+			    <!-- info row -->
+			    <div class="row invoice-info">
+			      
+			      <div class="col-sm-12 invoice-col">
+			        <b>Recibo: </b> '.$order_data['bill_no'].'<br>
+					<b> Mesero: </b> '.$user_data['username'].'
+			        <b> Cliente: </b> 
+					
+			      </div>
+			      <!-- /.col -->
+			    </div>
+			    <!-- /.row -->
+
+			    <!-- Table row -->
+			    <div class="row">
+			      <div class="col-xs-12 table-responsive">
+			        <table class="table table-striped" border="1">
+			          <thead>
+			          <tr>
+					    <th>Qty</th>
+			            <th>Descripción</th>
+			            <th>Total</th>
+			          </tr>
+			          </thead>
+			          <tbody>'; 
+
+			          foreach ($orders_items as $k => $v) {
+
+			          	$product_data = $this->model_products->getProductData($v['product_id']); 
+			          	
+			          	$html .= '<tr>
+						  	<td>'.$v['qty'].'</td>
+				            <td>'.$product_data['name'].'</td>
+				            <td>'.$this->currency_code . ' ' .$v['amount'].'</td>
+			          	</tr>';
+			          }
+			          
+			          $html .= '</tbody>
+			        </table>
+			      </div>
+			      <!-- /.col -->
+			    </div>
+			    <!-- /.row -->
+
+			    <div class="row">
+			      
+			      <div class="col-xs-12 ">
+
+			        <div class="table-responsive">
+			          <table class="table" border = "1">
+			            <tr>
+			              <th style="width:50%">Sub Total:</th>
+			              <td>'.$this->currency_code . ' ' .$order_data['gross_amount'].'</td>
+			            </tr>';
+
+			            if($order_data['service_charge_amount'] > 0) {
+			            	$html .= '<tr>
+				              <th>Propina ('.$order_data['service_charge_rate'].'%)</th>
+				              <td>'.$this->currency_code .' '.$order_data['service_charge_amount'].'</td>
+				            </tr>';
+			            }
+
+			            if($order_data['vat_charge_amount'] > 0) {
+			            	$html .= '<tr>
+				              <th>IVA ('.$order_data['vat_charge_rate'].'%)</th>
+				              <td>'.$this->currency_code .' '.$order_data['vat_charge_amount'].'</td>
+				            </tr>';
+			            }
+			            
+			            
+			            $html .=' 
+			            <tr>
+			              <th>Total:</th>
+			              <td>'.$this->currency_code . ' ' .$order_data['net_amount'].'</td>
+			            </tr>
+			            <tr>
+			              <th>Estado:</th>
+			              <td>'.$paid_status.'</td>
+			            </tr>
+			          </table>
+					  <br><br><br><br><br><br>
+			        </div>
+			      </div>
+			      <!-- /.col -->
+			    </div>
+			    <!-- /.row -->
+			  </section>
+			  <!-- /.content -->
+			</div>
+		</body>
+	</html>';
+
+			  echo $html;
+		}
+	}
+
+/*
+	* It gets the product id and fetch the order data. 
+	* The order print logic is done here 
+	*/
+	public function printDivCoc($id)
+	{
+		if(!in_array('viewOrder', $this->permission)) {
+          	redirect('dashboard', 'refresh');
+  		}
+        
+		if($id) {
+			$order_data = $this->model_orders->getOrdersData($id);
+			$orders_items = $this->model_orders->getOrdersItemDataNotCompleted($id);
+			$company_info = $this->model_company->getCompanyData(1);
+			$store_data = $this->model_stores->getStoresData($order_data['store_id']);
+
+			$order_date = date('d/m/Y', $order_data['date_time']);
+			$paid_status = ($order_data['paid_status'] == 1) ? "Pagado" : "Sin Pagar";
 
 			$table_data = $this->model_tables->getTableData($order_data['table_id']);
 
@@ -378,7 +554,6 @@ class Orders extends Admin_Controller
 			      <div class="col-xs-12">
 			        <h2 class="page-header">
 			          '.$company_info['company_name'].'
-			          <small >Fecha: '.$order_date.'</small>
 			        </h2>
 			      </div>
 			      <!-- /.col -->
@@ -387,8 +562,7 @@ class Orders extends Admin_Controller
 			    <div class="row invoice-info">
 			      
 			      <div class="col-sm-12 invoice-col">
-			        <b>Recibo: </b> '.$order_data['bill_no'].'<br>
-			        <b>Mesa: </b> '.$table_data['table_name'].'<br>
+			        <b>Orden de: </b> '.$table_data['table_name'].'<br>
 			      </div>
 			      <!-- /.col -->
 			    </div>
@@ -400,9 +574,9 @@ class Orders extends Admin_Controller
 			        <table class="table table-striped">
 			          <thead>
 			          <tr>
-					    <th>Qty</th>
+					    <th>Cantidad</th>
 			            <th>Descripción</th>
-			            <th>Total</th>
+			        
 			          </tr>
 			          </thead>
 			          <tbody>'; 
@@ -414,7 +588,6 @@ class Orders extends Admin_Controller
 			          	$html .= '<tr>
 						  	<td>'.$v['qty'].'</td>
 				            <td>'.$product_data['name'].'</td>
-				            <td>'.$this->currency_code . ' ' .$v['amount'].'</td>
 			          	</tr>';
 			          }
 			          
@@ -425,47 +598,7 @@ class Orders extends Admin_Controller
 			    </div>
 			    <!-- /.row -->
 
-			    <div class="row">
-			      
-			      <div class="col-xs-12 ">
-
-			        <div class="table-responsive">
-			          <table class="table" >
-			            <tr>
-			              <th style="width:50%">Sub Total:</th>
-			              <td>'.$this->currency_code . ' ' .$order_data['gross_amount'].'</td>
-			            </tr>';
-
-			            if($order_data['service_charge_amount'] > 0) {
-			            	$html .= '<tr>
-				              <th>Propina ('.$order_data['service_charge_rate'].'%)</th>
-				              <td>'.$this->currency_code .' '.$order_data['service_charge_amount'].'</td>
-				            </tr>';
-			            }
-
-			            if($order_data['vat_charge_amount'] > 0) {
-			            	$html .= '<tr>
-				              <th>IVA ('.$order_data['vat_charge_rate'].'%)</th>
-				              <td>'.$this->currency_code .' '.$order_data['vat_charge_amount'].'</td>
-				            </tr>';
-			            }
-			            
-			            
-			            $html .=' 
-			            <tr>
-			              <th>Total:</th>
-			              <td>'.$this->currency_code . ' ' .$order_data['net_amount'].'</td>
-			            </tr>
-			            <tr>
-			              <th>Estado:</th>
-			              <td>'.$paid_status.'</td>
-			            </tr>
-			          </table>
-					  <br><br><br><br><br><br>
-			        </div>
-			      </div>
-			      <!-- /.col -->
-			    </div>
+			    
 			    <!-- /.row -->
 			  </section>
 			  <!-- /.content -->

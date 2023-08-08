@@ -113,6 +113,7 @@
                           <td>
                             <input type="text" name="amount[]" id="amount_<?php echo $x; ?>" class="form-control" disabled value="<?php echo $val['amount'] ?>" autocomplete="off">
                             <input type="hidden" name="amount_value[]" id="amount_value_<?php echo $x; ?>" class="form-control" value="<?php echo $val['amount'] ?>" autocomplete="off">
+                            <input type="hidden" class="form-control" id="completo_value_<?php echo $x; ?>" name="completo_value[]" value="<?php echo $val['completo'] ?>" >
                           </td>
                           <td><button type="button" class="btn btn-danger" onclick="removeRow('<?php echo $x; ?>')"><i class="fa fa-close"></i></button></td>
                        </tr>
@@ -170,7 +171,7 @@
                     <div class="col-sm-7">
                       <select type="text" class="form-control" id="paid_status" name="paid_status">
                         <option value="1">Pagado</option>
-                        <option value="2">Sin Pagar</option>
+                        <option value="2" selected>Sin Pagar</option>
                       </select>
                     </div>
                   </div>
@@ -263,7 +264,7 @@
                     '</td>'+ 
                     '<td><input type="number" name="qty[]" id="qty_'+row_id+'" class="form-control" onkeyup="getTotal('+row_id+')"></td>'+
                     '<td><input type="text" name="rate[]" id="rate_'+row_id+'" class="form-control" disabled><input type="hidden" name="rate_value[]" id="rate_value_'+row_id+'" class="form-control"></td>'+
-                    '<td><input type="text" name="amount[]" id="amount_'+row_id+'" class="form-control" disabled><input type="hidden" name="amount_value[]" id="amount_value_'+row_id+'" class="form-control"></td>'+
+                    '<td><input type="text" name="amount[]" id="amount_'+row_id+'" class="form-control" disabled><input type="hidden" name="amount_value[]" id="amount_value_'+row_id+'" class="form-control"><input type="hidden" name="completo_value[]" id="completo_value_'+row_id+'" class="form-control"></td>'+
                     '<td><button type="button" class="btn btn-default" onclick="removeRow(\''+row_id+'\')"><i class="fa fa-close"></i></button></td>'+
                     '</tr>';
 
@@ -294,7 +295,7 @@
       subAmount();
 
     } else {
-      alert('no row !! please refresh the page');
+      alert('no hay filas !! por favor refresca la pagina');
     }
   }
 
