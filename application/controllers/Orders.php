@@ -468,7 +468,7 @@ class Orders extends Admin_Controller
 			            </tr>
 			            <tr>
 			              <th>Estado:</th>
-			              <td>'.$paid_status.'</td>
+			              <td>CANCELADO</td>
 			            </tr>
 			          </table>
 					  <br><br>
