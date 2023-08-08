@@ -29,6 +29,9 @@
               </select>
             </div>
             <button type="submit" class="btn btn-default">Cargar</button>
+              <input type="date" id="fecha1" name="fecha1" class="form-control" min="2023-01-01" />
+              <input type="date" id="fecha2" name="fecha2" class="form-control" min="2023-01-01" />
+              <input type="button" class="btn btn-warning " onclick="enviarFechas()" value="Imprimir">
           </form>
         </div>
 
@@ -199,4 +202,16 @@
     barChartOptions.datasetFill = false
     barChart.Bar(barChartData, barChartOptions)
   })
+
+
+  function enviarFechas () {
+
+  var fecha1 = document.getElementById("fecha1").value;
+  var fecha2 = document.getElementById("fecha2").value;
+ 
+  var base_url = '<?php echo base_url();?>'
+  var url = base_url + "reports/printRep/"+fecha1+"%"+fecha2;
+  //window.location.href = url;
+  window.open(url, '_blank');
+}
   </script>

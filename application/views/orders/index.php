@@ -48,14 +48,14 @@
             <table id="manageTable" class="table table-bordered table-hover table-striped">
               <thead>
               <tr>
-                <th>Mesa</th>
-                <th>Notas</th>
-                <th>Productos</th>
-                <th>Total</th>
-                <th>Estado de Pago</th>
-                <th>Estado de Orden</th>
+                <th width="10%">Mesa</th>
+                <th width="25%">Notas</th>
+                <th width="20%">Productos</th>
+                <th width="10%">Total</th>
+                <!--<th>Estado de Pago</th>-->
+                <th width="10%">Estado de Orden</th>
                 <?php if(in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
-                  <th>Opciones</th>
+                  <th width="25%">Opciones</th>
                 <?php endif; ?>
               </tr>
               </thead>
