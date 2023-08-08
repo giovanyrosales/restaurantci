@@ -57,24 +57,24 @@
 
                 <div class="form-group">
                   <label for="product_name">Nombre Producto</label>
-                  <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Nombre de Producto" autocomplete="off" value="<?php echo $this->input->post('product_name') ?>" />
+                  <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Nombre de Producto" autocomplete="off" value="<?php echo $this->input->post('product_name') ?>" required/>
                 </div>
 
                 <div class="form-group">
                   <label for="price">Precio</label>
-                  <input type="text" class="form-control" id="price" name="price" placeholder="Ingrese Precio" autocomplete="off" value="<?php echo $this->input->post('price') ?>"/>
+                  <input type="text" class="form-control" id="price" name="price" placeholder="Ingrese Precio" autocomplete="off" value="<?php echo $this->input->post('price') ?>" required />
                 </div>
 
                 <div class="form-group">
                   <label for="description">Descripción</label>
-                  <textarea type="text" class="form-control" id="description" name="description" placeholder="Ingrese Descripción" autocomplete="off">
+                  <textarea type="text" class="form-control" id="description" name="description" placeholder="Ingrese Descripción" autocomplete="off" required >
                   <?php echo $this->input->post('description') ?>
                   </textarea>
                 </div>
 
                 <div class="form-group">
                   <label for="category">Categoria</label>
-                  <select class="form-control select_group" id="category" name="category[]" multiple="multiple">
+                  <select class="form-control select_group" id="category" name="category[]" multiple="multiple" required>
                     <?php foreach ($category as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
                     <?php endforeach ?>
@@ -83,7 +83,7 @@
 
                 <div class="form-group">
                   <label for="store">Empresa</label>
-                  <select class="form-control select_group" id="store" name="store[]" multiple="multiple">
+                  <select class="form-control select_group" id="store" name="store[]" multiple="multiple" required>
                     <?php foreach ($stores as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
                     <?php endforeach ?>
