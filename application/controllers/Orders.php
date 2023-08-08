@@ -601,7 +601,15 @@ class Orders extends Admin_Controller
 			    </div>
 			    <!-- /.row -->
 
-			    
+			    <!-- info row -->
+			    <div class="row invoice-info">
+			      
+			      <div class="col-sm-12 invoice-col">
+			        <b>Notas: </b> '.$order_data['notas'].'<br>
+			      </div>
+			      <!-- /.col -->
+			    </div>
+			    <!-- /.row -->
 			    <!-- /.row -->
 			  </section>
 			  <!-- /.content -->
